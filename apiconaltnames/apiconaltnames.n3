@@ -1,0 +1,821 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://americanartcollaborative.org/puam/person-institution/10706> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/10706/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/1153> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/1153/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/12988> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/12988/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/1358> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/1358/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/13793> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/13793/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/13984> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/13984/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/1440> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/1440/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/14601> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/14601/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/14927> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/14927/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/1498> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/1498/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/15001> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/15001/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/1569> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/1569/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/16023> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/16023/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/1930> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/1930/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/3834> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/3834/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6301> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6301/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6302> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6302/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6303> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6303/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6304> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6304/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6306> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6306/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6308> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6308/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6309> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6309/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6310> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6310/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6311> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6311/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6312> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6312/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6313> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6313/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6315> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6315/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6316> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6316/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6317> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6317/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6318> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6318/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6319> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6319/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6320> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6320/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6321> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6321/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6323> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6323/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6324> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6324/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6325> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6325/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6326> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6326/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6327> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6327/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6329> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6329/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6331> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6331/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6333> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6333/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6334> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6334/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6335> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6335/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6337> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6337/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6338> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6338/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6339> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6339/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/6340> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/6340/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/658> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/658/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/931> a crm:E39_Actor ;
+    crm:P131_is_identified_by <http://americanartcollaborative.org/puam/person-institution/931/appellation> .
+
+<http://americanartcollaborative.org/puam/person-institution/10706/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castelli Graphics" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/10706/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/10706/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castelli Graphics" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1153/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Paul Cava" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/1153/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/1153/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1153/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Paul" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1153/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cava" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/12988/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Antonio del Castillo (y Saavedra)" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/12988/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/12988/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/12988/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Antonio del" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/12988/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castillo (y Saavedra)" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1358/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Elizabeth Catlett" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/1358/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/1358/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1358/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Elizabeth" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1358/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Catlett" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/13793/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Ted Carr" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/13793/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/13793/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/13793/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Ted" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/13793/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carr" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/13984/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Casas Grandes" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1440/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Sebastiano Ceccarini" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/1440/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/1440/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1440/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Sebastiano" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1440/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Ceccarini" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/14601/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Patrick Caulfield" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/14601/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/14601/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/14601/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Patrick" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/14601/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Caulfield" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/14927/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "J. Ceeh" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/14927/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/14927/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/14927/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "J." ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/14927/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Ceeh" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1498/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Alfredo Castañeda" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/1498/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/1498/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1498/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Alfredo" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1498/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castañeda" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/15001/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Antonio Carracci" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/15001/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/15001/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/15001/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Antonio" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/15001/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carracci" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1569/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Franz Ludwig Catel" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/1569/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/1569/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1569/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Franz Ludwig" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1569/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Catel" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/16023/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Giacomo Cavedone" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/16023/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/16023/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/16023/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Giacomo" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/16023/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cavedone" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1930/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Annibale Carracci, school" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/1930/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/1930/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1930/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Annibale" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/1930/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carracci, school" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/3834/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cecco Bravo (Francesco Montelatici)" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/3834/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/3834/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/3834/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Francesco" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/3834/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Montelatici" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6301/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Emily Carr" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6301/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6301/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6301/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Emily" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6301/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carr" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6302/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Agostino Carracci" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6302/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6302/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6302/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Agostino" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6302/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carracci" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6303/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Annibale Carracci" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6303/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6303/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6303/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Annibale" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6303/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carracci" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6304/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Ludovico Carracci" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6304/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6304/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6304/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Ludovico" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6304/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carracci" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6306/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "John Mulcaster Carrick" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6306/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6306/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6306/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "John Mulcaster" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6306/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carrick" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6308/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Albert Ernest Carrier-Belleuse" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6308/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6308/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6308/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Albert Ernest" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6308/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carrier-Belleuse" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6309/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Eugène Carrière" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6309/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6309/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6309/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Eugène" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6309/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carrière" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6310/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Leonora Carrington" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6310/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6310/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6310/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Leonora" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6310/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carrington" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6311/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "John Carroll" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6311/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6311/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6311/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "John" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6311/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carroll" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6312/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Manuel Carrillo" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6312/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6312/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6312/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Manuel" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6312/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carrillo" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6313/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cartellino Painter" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6313/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6313/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cartellino Painter" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6315/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Henri Cartier-Bresson" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6315/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6315/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6315/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Henri" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6315/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cartier-Bresson" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6316/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Thomas Carwitham" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6316/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6316/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6316/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Thomas" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6316/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carwitham" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6317/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Reginald Case" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6317/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6317/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6317/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Reginald" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6317/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Case" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6318/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "John William Casilear" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6318/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6318/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6318/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "John William" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6318/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Casilear" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6319/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Alessandro Casolani" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6319/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6319/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6319/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Alessandro" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6319/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Casolani" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6320/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Louis François Cassas" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6320/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6320/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6320/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Louis François" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6320/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cassas" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6321/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Mary Cassatt" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6321/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6321/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6321/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Mary" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6321/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cassatt" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6323/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "J. André Castaigne" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6323/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6323/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6323/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "J. André" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6323/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castaigne" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6324/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Bernardo Castello" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6324/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6324/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6324/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Bernardo" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6324/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castello" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6325/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Valerio Castello" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6325/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6325/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6325/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Valerio" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6325/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castello" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6326/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Federico Castellón" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6326/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6326/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6326/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Federico" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6326/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castellón" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6327/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Giovanni Benedetto Castiglione" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6327/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6327/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6327/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Giovanni" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6327/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Castiglione" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6329/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Mark Catesby" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6329/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6329/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6329/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Mark" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6329/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Catesby" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6331/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "George Catlin" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6331/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6331/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6331/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "George" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6331/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Catlin" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6333/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Bernardo Cavallino" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6333/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6333/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6333/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Bernardo" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6333/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cavallino" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6334/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Jacopo Cavedone" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6334/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6334/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6334/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Jacopo" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6334/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cavedone" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6335/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "John Cawse" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6335/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6335/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6335/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "John" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6335/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cawse" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6337/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Anne Claude Philippe Caylus" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6337/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6337/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6337/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Anne Claude Philippe" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6337/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Caylus" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6338/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Caylus Painter" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6338/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6338/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Caylus Painter" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6339/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Naddo Ceccarelli" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6339/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6339/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6339/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Naddo" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6339/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Ceccarelli" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6340/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "J. Cecill" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/6340/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/6340/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6340/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "J." ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/6340/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Cecill" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/658/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Lewis Carroll" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/658/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/658/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/658/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Lewis" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/658/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carroll" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/931/appellation> a crm:E82_Actor_Appellation ;
+    rdfs:label "Lawrence Carroll" ;
+    crm:P106_is_composed_of <http://americanartcollaborative.org/puam/person-institution/931/appellation/firstname>,
+        <http://americanartcollaborative.org/puam/person-institution/931/appellation/lastname> ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/931/appellation/firstname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Lawrence" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/first-name> .
+
+<http://americanartcollaborative.org/puam/person-institution/931/appellation/lastname> a crm:E82_Actor_Appellation ;
+    rdfs:label "Carroll" ;
+    crm:P2_has_type <http://americanartcollaborative.org/puam/thesauri/nametype/last-name> .
+
+<http://americanartcollaborative.org/puam/thesauri/nametype/first-name> a crm:E55_Type .
+
+<http://americanartcollaborative.org/puam/thesauri/nametype/last-name> a crm:E55_Type .
+
+<http://americanartcollaborative.org/puam/thesauri/nametype/primary-name> a crm:E55_Type ;
+    rdfs:label "Primary Name" .
+
