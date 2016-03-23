@@ -1,0 +1,406 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://americanartcollaborative.org/puam/exhibition/1200/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1200> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1209/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1209> ;
+    crm:P3_has_note "In House = 0, Traveling = 1, OnlineHistory = 1, PrincetonPublic = 0" .
+
+<http://americanartcollaborative.org/puam/exhibition/1217/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1217> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1229/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1229> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1234/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1234> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1280/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1280> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 1, PrincetonPublic = 0" .
+
+<http://americanartcollaborative.org/puam/exhibition/1358/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1358> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1374/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1374> ;
+    crm:P3_has_note "In House = 0, Traveling = 1, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1382/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1382> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1427/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1427> ;
+    crm:P3_has_note "In House = 0, Traveling = 1, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1446/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1446> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1481/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1481> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1489/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1489> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 1, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1505/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1505> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1519/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1519> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 1, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1550/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1550> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1558/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1558> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1563/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1563> ;
+    crm:P3_has_note "In House = 0, Traveling = 1, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1573/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1573> ;
+    crm:P3_has_note "In House = 1, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1641/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1641> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1653/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1653> ;
+    crm:P3_has_note "In House = 1, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1655/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1655> ;
+    crm:P3_has_note "In House = 1, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1657/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1657> ;
+    crm:P3_has_note "In House = 1, Traveling = 0, OnlineHistory = 0, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/1750/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/1750> ;
+    crm:P3_has_note "In House = 1, Traveling = 0, OnlineHistory = 1, PrincetonPublic = 1" .
+
+<http://americanartcollaborative.org/puam/exhibition/942/notes> a crm:E33_Linguistic_Object ;
+    crm:P129_is_about <http://americanartcollaborative.org/puam/exhibition/942> ;
+    crm:P3_has_note "In House = 0, Traveling = 0, OnlineHistory = 1, PrincetonPublic = 0" .
+
+<http://americanartcollaborative.org/puam/exhibition/1200> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1200/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1200/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1200/appellation> a crm:E41_Appellation ;
+    rdfs:label "Outside In: Chinese x American x Contemporary Art" .
+
+<http://americanartcollaborative.org/puam/exhibition/1200/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "March 7 – June 7, 2009" ;
+    crm:P82a_begin_of_the_begin "2009-03-05" ;
+    crm:P82b_end_of_the_end "2009-06-07" .
+
+<http://americanartcollaborative.org/puam/exhibition/1209> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1209/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1209/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1209/appellation> a crm:E41_Appellation ;
+    rdfs:label "Cézanne and American Modernism" .
+
+<http://americanartcollaborative.org/puam/exhibition/1209/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "September 12, 2009 – January 3, 2010" ;
+    crm:P82a_begin_of_the_begin "2009-09-12" ;
+    crm:P82b_end_of_the_end "2010-01-03" .
+
+<http://americanartcollaborative.org/puam/exhibition/1217> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1217/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1217/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1217/appellation> a crm:E41_Appellation ;
+    rdfs:label "Memorable Encounters from Honen to de Kooning: In Honor of Yoshiaki Shimizu" .
+
+<http://americanartcollaborative.org/puam/exhibition/1217/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "March 28 - August 2, 2009" ;
+    crm:P82a_begin_of_the_begin "2009-03-28" ;
+    crm:P82b_end_of_the_end "2009-08-02" .
+
+<http://americanartcollaborative.org/puam/exhibition/1229> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1229/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1229/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1229/appellation> a crm:E41_Appellation ;
+    rdfs:label "Emmet Gowin: A Collective Portrait" .
+
+<http://americanartcollaborative.org/puam/exhibition/1229/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "October 24, 2009–February 21, 2010" ;
+    crm:P82a_begin_of_the_begin "2009-10-24" ;
+    crm:P82b_end_of_the_end "2010-02-21" .
+
+<http://americanartcollaborative.org/puam/exhibition/1234> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1234/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1234/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1234/appellation> a crm:E41_Appellation ;
+    rdfs:label "Nobody's Property: Art, Land, Space, 2000-2010" .
+
+<http://americanartcollaborative.org/puam/exhibition/1234/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "October 23, 2010–February 20, 2011" ;
+    crm:P82a_begin_of_the_begin "2010-10-23" ;
+    crm:P82b_end_of_the_end "2011-02-20" .
+
+<http://americanartcollaborative.org/puam/exhibition/1280> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1280/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1280/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1280/appellation> a crm:E41_Appellation ;
+    rdfs:label "Artist as Image" .
+
+<http://americanartcollaborative.org/puam/exhibition/1280/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "February 20–May 16, 2010" ;
+    crm:P82a_begin_of_the_begin "2010-02-20" ;
+    crm:P82b_end_of_the_end "2010-05-16" .
+
+<http://americanartcollaborative.org/puam/exhibition/1358> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1358/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1358/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1358/appellation> a crm:E41_Appellation ;
+    rdfs:label "Princeton and the Gothic Revival: 1870–1930" .
+
+<http://americanartcollaborative.org/puam/exhibition/1358/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "February 25–June 24, 2012" ;
+    crm:P82a_begin_of_the_begin "2012-02-25" ;
+    crm:P82b_end_of_the_end "2012-06-24" .
+
+<http://americanartcollaborative.org/puam/exhibition/1374> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1374/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1374/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1374/appellation> a crm:E41_Appellation ;
+    rdfs:label "The Life and Death of Buildings" .
+
+<http://americanartcollaborative.org/puam/exhibition/1374/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "July 23–November 6, 2011" ;
+    crm:P82a_begin_of_the_begin "2011-07-23" ;
+    crm:P82b_end_of_the_end "2011-11-06" .
+
+<http://americanartcollaborative.org/puam/exhibition/1382> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1382/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1382/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1382/appellation> a crm:E41_Appellation ;
+    rdfs:label "Root & Branch" .
+
+<http://americanartcollaborative.org/puam/exhibition/1382/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "July 14–December 2, 2012" ;
+    crm:P82a_begin_of_the_begin "2012-07-14" ;
+    crm:P82b_end_of_the_end "2012-12-02" .
+
+<http://americanartcollaborative.org/puam/exhibition/1427> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1427/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1427/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1427/appellation> a crm:E41_Appellation ;
+    rdfs:label "Minor White: The Eye That Shapes" .
+
+<http://americanartcollaborative.org/puam/exhibition/1427/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "April 27, 1989–June 15, 1991" ;
+    crm:P82a_begin_of_the_begin "1989-04-27" ;
+    crm:P82b_end_of_the_end "1991-06-15" .
+
+<http://americanartcollaborative.org/puam/exhibition/1446> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1446/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1446/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1446/appellation> a crm:E41_Appellation ;
+    rdfs:label "The Bunnell Decades" .
+
+<http://americanartcollaborative.org/puam/exhibition/1446/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "July 2–October 23, 2011" ;
+    crm:P82a_begin_of_the_begin "2011-07-02" ;
+    crm:P82b_end_of_the_end "2011-10-23" .
+
+<http://americanartcollaborative.org/puam/exhibition/1481> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1481/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1481/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1481/appellation> a crm:E41_Appellation ;
+    rdfs:label "Lee Friedlander: Cars and The New Cars" .
+
+<http://americanartcollaborative.org/puam/exhibition/1481/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "November 5, 2011–February 5, 2012" ;
+    crm:P82a_begin_of_the_begin "2011-11-05" ;
+    crm:P82b_end_of_the_end "2012-02-05" .
+
+<http://americanartcollaborative.org/puam/exhibition/1489> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1489/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1489/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1489/appellation> a crm:E41_Appellation ;
+    rdfs:label "Encounters: Conflict, Dialogue, Discovery" .
+
+<http://americanartcollaborative.org/puam/exhibition/1489/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "Saturday, July 14, 2012 - Sunday, September 23, 2012" ;
+    crm:P82a_begin_of_the_begin "2012-07-14" ;
+    crm:P82b_end_of_the_end "2012-09-23" .
+
+<http://americanartcollaborative.org/puam/exhibition/1505> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1505/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1505/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1505/appellation> a crm:E41_Appellation ;
+    rdfs:label "New Jersey as Non-Site" .
+
+<http://americanartcollaborative.org/puam/exhibition/1505/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "October 5, 2013–January 5, 2014" ;
+    crm:P82a_begin_of_the_begin "2013-10-05" ;
+    crm:P82b_end_of_the_end "2014-01-05" .
+
+<http://americanartcollaborative.org/puam/exhibition/1519> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1519/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1519/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1519/appellation> a crm:E41_Appellation ;
+    rdfs:label "1913: The Year of Modernism" .
+
+<http://americanartcollaborative.org/puam/exhibition/1519/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "March 23–June 23, 2013" ;
+    crm:P82a_begin_of_the_begin "2013-03-23" ;
+    crm:P82b_end_of_the_end "2013-06-23" .
+
+<http://americanartcollaborative.org/puam/exhibition/1550> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1550/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1550/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1550/appellation> a crm:E41_Appellation ;
+    rdfs:label "The Itinerant Languages of Photography" .
+
+<http://americanartcollaborative.org/puam/exhibition/1550/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "September 7, 2013–January 19, 2014" ;
+    crm:P82a_begin_of_the_begin "2013-09-07" ;
+    crm:P82b_end_of_the_end "2014-01-19" .
+
+<http://americanartcollaborative.org/puam/exhibition/1558> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1558/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1558/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1558/appellation> a crm:E41_Appellation ;
+    rdfs:label "Two Views: Atget & Friedlander" .
+
+<http://americanartcollaborative.org/puam/exhibition/1558/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "December 15, 2012–March 10, 2013" ;
+    crm:P82a_begin_of_the_begin "2012-12-15" ;
+    crm:P82b_end_of_the_end "2013-03-10" .
+
+<http://americanartcollaborative.org/puam/exhibition/1563> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1563/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1563/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1563/appellation> a crm:E41_Appellation ;
+    rdfs:label "Lee Bontecou: Drawn Worlds" .
+
+<http://americanartcollaborative.org/puam/exhibition/1563/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "June 28–September 21, 2014" ;
+    crm:P82a_begin_of_the_begin "2014-06-28" ;
+    crm:P82b_end_of_the_end "2014-09-21" .
+
+<http://americanartcollaborative.org/puam/exhibition/1573> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1573/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1573/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1573/appellation> a crm:E41_Appellation ;
+    rdfs:label "Faces and Facets" .
+
+<http://americanartcollaborative.org/puam/exhibition/1573/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "July 6– August 18, 2013" ;
+    crm:P82a_begin_of_the_begin "2013-07-06" ;
+    crm:P82b_end_of_the_end "2013-08-18" .
+
+<http://americanartcollaborative.org/puam/exhibition/1641> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1641/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1641/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1641/appellation> a crm:E41_Appellation ;
+    rdfs:label "The City Lost and Found: Capturing New York, Chicago, and Los Angeles, 1960–1980" .
+
+<http://americanartcollaborative.org/puam/exhibition/1641/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "February 21–June 7, 2015" ;
+    crm:P82a_begin_of_the_begin "2015-02-21" ;
+    crm:P82b_end_of_the_end "2015-06-07" .
+
+<http://americanartcollaborative.org/puam/exhibition/1653> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1653/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1653/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1653/appellation> a crm:E41_Appellation ;
+    rdfs:label "Painting on Paper: American Watercolors at Princeton" .
+
+<http://americanartcollaborative.org/puam/exhibition/1653/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "June 27–August 30, 2015" ;
+    crm:P82a_begin_of_the_begin "2015-06-27" ;
+    crm:P82b_end_of_the_end "2015-08-30" .
+
+<http://americanartcollaborative.org/puam/exhibition/1655> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1655/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1655/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1655/appellation> a crm:E41_Appellation ;
+    rdfs:label "By Dawn's Early Light: Jewish Contributions to American Culture from the Nation’s Founding to the Civil War" .
+
+<http://americanartcollaborative.org/puam/exhibition/1655/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "February 13–June 12, 2016" ;
+    crm:P82a_begin_of_the_begin "2016-02-13" ;
+    crm:P82b_end_of_the_end "2016-06-12" .
+
+<http://americanartcollaborative.org/puam/exhibition/1657> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1657/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1657/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1657/appellation> a crm:E41_Appellation ;
+    rdfs:label "Collecting Contemporary, 1960–2015: Selections from the Schorr Collection " .
+
+<http://americanartcollaborative.org/puam/exhibition/1657/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "June 27–September 20, 2015" ;
+    crm:P82a_begin_of_the_begin "2015-06-27" ;
+    crm:P82b_end_of_the_end "2015-09-20" .
+
+<http://americanartcollaborative.org/puam/exhibition/1750> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/1750/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/1750/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/1750/appellation> a crm:E41_Appellation ;
+    rdfs:label "Ursula von Rydingsvard and Others: Materials and Manipulations" .
+
+<http://americanartcollaborative.org/puam/exhibition/1750/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "October 17–February 07, 2016" ;
+    crm:P82a_begin_of_the_begin "2015-10-17" ;
+    crm:P82b_end_of_the_end "2016-02-07" .
+
+<http://americanartcollaborative.org/puam/exhibition/942> a crm:E7_Activity ;
+    crm:P1_is_identified_by <http://americanartcollaborative.org/puam/exhibition/942/appellation> ;
+    crm:P4_has_time-span <http://americanartcollaborative.org/puam/exhibition/942/date> .
+
+<http://americanartcollaborative.org/puam/exhibition/942/appellation> a crm:E41_Appellation ;
+    rdfs:label "Modernist Art: Prints, Drawings, and Photographs" .
+
+<http://americanartcollaborative.org/puam/exhibition/942/date> a crm:E52_Time-Span ;
+    crm:P3_has_note "September 9, 2006 - January 14, 2007" ;
+    crm:P82a_begin_of_the_begin "2006-09-09" ;
+    crm:P82b_end_of_the_end "2007-01-14" .
+
