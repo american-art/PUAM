@@ -63,6 +63,7 @@ if getValue("FirstName"):
 | _ActorAppellationURI_ | `uri` | `E82_Actor_Appellation1`|
 | _ConstituentPositionURI_ | `uri` | `E33_Linguistic_Object1`|
 | _ConstituentURI_ | `uri` | `E39_Actor1`|
+| _CultureGroup_ | `rdfs:label` | `E74_Group1`|
 | _DisplayName_ | `rdfs:label` | `E82_Actor_Appellation1`|
 | _FirstName_ | `rdfs:label` | `E82_Actor_Appellation3`|
 | _FirstNameAppellationURI_ | `uri` | `E82_Actor_Appellation3`|
@@ -79,6 +80,7 @@ if getValue("FirstName"):
 | From | Property | To |
 |  --- | -------- | ---|
 | `E33_Linguistic_Object1` | `http://www.cidoc-crm.org/cidoc-crm/P129_is_about` | `E39_Actor1`|
+| `E39_Actor1` | `http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of` | `E74_Group1`|
 | `E39_Actor1` | `http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by` | `E82_Actor_Appellation1`|
 | `E82_Actor_Appellation1` | `http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of` | `E82_Actor_Appellation2`|
 | `E82_Actor_Appellation1` | `http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of` | `E82_Actor_Appellation3`|
