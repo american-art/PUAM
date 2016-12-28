@@ -38,6 +38,16 @@ Literal Type: ``
 <br/>Language: ``
 <br/>isUri: `true`
 
+#### Literal Node: `http://vocab.getty.edu/aat/300379842`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
+#### Literal Node: `http://vocab.getty.edu/aat/300080102`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
 
 ## PyTransforms
 #### _ConstituentURI_
@@ -184,6 +194,18 @@ From column: _RECORDS / DeathURI_
 return getValue("DeathURI") + "/time"
 ```
 
+#### _NationalityURI_
+From column: _RECORDS / Nationality_
+``` python
+return getValue("ConstituentURI") + "/group"
+```
+
+#### _BiographyURI_
+From column: _RECORDS / Biography_
+``` python
+return getValue("ConstituentURI") + "/biography"
+```
+
 
 ## Selections
 
@@ -194,6 +216,8 @@ return getValue("DeathURI") + "/time"
 | _AlphaSortURI_ | `uri` | `crm:E82_Actor_Appellation2`|
 | _AppellationURI_ | `uri` | `crm:E82_Actor_Appellation1`|
 | _AppellationValue_ | `rdf:value` | `crm:E82_Actor_Appellation1`|
+| _Biography_ | `rdf:value` | `crm:E33_Linguistic_Object1`|
+| _BiographyURI_ | `uri` | `crm:E33_Linguistic_Object1`|
 | _BirthTimeURI_ | `uri` | `crm:E52_Time-Span1`|
 | _BirthURI_ | `uri` | `crm:E63_Beginning_of_Existence1`|
 | _ConstituentID_ | `rdf:value` | `crm:E42_Identifier1`|
@@ -219,6 +243,8 @@ return getValue("DeathURI") + "/time"
 | _NameTitle_ | `rdf:value` | `crm:E82_Actor_Appellation3`|
 | _NameTitleURI_ | `uri` | `crm:E82_Actor_Appellation3`|
 | _NameTitle_TypeURI_ | `uri` | `crm:E55_Type1`|
+| _Nationality_ | `rdfs:label` | `crm:E74_Group1`|
+| _NationalityURI_ | `uri` | `crm:E74_Group1`|
 | _Suffix_ | `rdf:value` | `crm:E82_Actor_Appellation4`|
 | _SuffixTypeURI_ | `uri` | `crm:E55_Type2`|
 | _SuffixURI_ | `uri` | `crm:E82_Actor_Appellation4`|
@@ -227,6 +253,10 @@ return getValue("DeathURI") + "/time"
 ## Links
 | From | Property | To |
 |  --- | -------- | ---|
+| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300080102`|
+| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
+| `crm:E39_Actor1` | `crm:P107i_is_current_or_former_member_of` | `crm:E74_Group1`|
+| `crm:E39_Actor1` | `crm:P129i_is_subject_of` | `crm:E33_Linguistic_Object1`|
 | `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation1`|
 | `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation2`|
 | `crm:E39_Actor1` | `crm:P1_is_identified_by` | `crm:E42_Identifier1`|
@@ -240,6 +270,7 @@ return getValue("DeathURI") + "/time"
 | `crm:E55_Type5` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404654`|
 | `crm:E63_Beginning_of_Existence1` | `crm:P4_has_time-span` | `crm:E52_Time-Span1`|
 | `crm:E64_End_of_Existence1` | `crm:P4_has_time-span` | `crm:E52_Time-Span2`|
+| `crm:E74_Group1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300379842`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation3`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation4`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation5`|
