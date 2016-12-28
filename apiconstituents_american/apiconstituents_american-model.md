@@ -136,6 +136,54 @@ From column: _RECORDS / MiddleNameURI_
 return getValue("MiddleNameURI") + "/type"
 ```
 
+#### _EarliestBirthdate_
+From column: _RECORDS / BeginDate_
+``` python
+return getValue("BeginDate")
+```
+
+#### _LatestBirthdate_
+From column: _RECORDS / EarliestBirthdate_
+``` python
+return getValue("BeginDate")
+```
+
+#### _BirthURI_
+From column: _RECORDS / BeginDate_
+``` python
+return getValue("ConstituentURI") + "/birth"
+```
+
+#### _BirthTimeURI_
+From column: _RECORDS / BirthURI_
+``` python
+return getValue("BirthURI") + "/time"
+```
+
+#### _EarliestDeathdate_
+From column: _RECORDS / EndDate_
+``` python
+return getValue("EndDate")
+```
+
+#### _LatestDeathdate_
+From column: _RECORDS / EarliestDeathdate_
+``` python
+return getValue("EndDate")
+```
+
+#### _DeathURI_
+From column: _RECORDS / EndDate_
+``` python
+return getValue("ConstituentURI") + "/death"
+```
+
+#### _DeathTimeURI_
+From column: _RECORDS / DeathURI_
+``` python
+return getValue("DeathURI") + "/time"
+```
+
 
 ## Selections
 
@@ -146,17 +194,25 @@ return getValue("MiddleNameURI") + "/type"
 | _AlphaSortURI_ | `uri` | `crm:E82_Actor_Appellation2`|
 | _AppellationURI_ | `uri` | `crm:E82_Actor_Appellation1`|
 | _AppellationValue_ | `rdf:value` | `crm:E82_Actor_Appellation1`|
+| _BirthTimeURI_ | `uri` | `crm:E52_Time-Span1`|
+| _BirthURI_ | `uri` | `crm:E63_Beginning_of_Existence1`|
 | _ConstituentID_ | `rdf:value` | `crm:E42_Identifier1`|
 | _ConstituentID_URI_ | `uri` | `crm:E42_Identifier1`|
 | _ConstituentLabel_ | `rdfs:label` | `crm:E42_Identifier1`|
 | _ConstituentURI_ | `uri` | `crm:E39_Actor1`|
+| _DeathTimeURI_ | `uri` | `crm:E52_Time-Span2`|
+| _DeathURI_ | `uri` | `crm:E64_End_of_Existence1`|
 | _DisplayName_ | `rdfs:label` | `crm:E39_Actor1`|
+| _EarliestBirthdate_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span1`|
+| _EarliestDeathdate_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span2`|
 | _FamilyNameTypeURI_ | `uri` | `crm:E55_Type4`|
 | _FamilyNameURI_ | `uri` | `crm:E82_Actor_Appellation6`|
 | _FirstName_ | `rdf:value` | `crm:E82_Actor_Appellation5`|
 | _GivenNameTypeURI_ | `uri` | `crm:E55_Type3`|
 | _GivenNameURI_ | `uri` | `crm:E82_Actor_Appellation5`|
 | _LastName_ | `rdf:value` | `crm:E82_Actor_Appellation6`|
+| _LatestBirthdate_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
+| _LatestDeathdate_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span2`|
 | _MiddleName_ | `rdf:value` | `crm:E82_Actor_Appellation7`|
 | _MiddleNameTypeURI_ | `uri` | `crm:E55_Type5`|
 | _MiddleNameURI_ | `uri` | `crm:E82_Actor_Appellation7`|
@@ -174,12 +230,16 @@ return getValue("MiddleNameURI") + "/type"
 | `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation1`|
 | `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation2`|
 | `crm:E39_Actor1` | `crm:P1_is_identified_by` | `crm:E42_Identifier1`|
+| `crm:E39_Actor1` | `crm:P92i_was_brought_into_existence_by` | `crm:E63_Beginning_of_Existence1`|
+| `crm:E39_Actor1` | `crm:P93i_was_taken_out_of_existence_by` | `crm:E64_End_of_Existence1`|
 | `crm:E42_Identifier1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
 | `crm:E55_Type1` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404845`|
 | `crm:E55_Type2` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404662`|
 | `crm:E55_Type3` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404651`|
 | `crm:E55_Type4` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404652`|
 | `crm:E55_Type5` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404654`|
+| `crm:E63_Beginning_of_Existence1` | `crm:P4_has_time-span` | `crm:E52_Time-Span1`|
+| `crm:E64_End_of_Existence1` | `crm:P4_has_time-span` | `crm:E52_Time-Span2`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation3`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation4`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation5`|
