@@ -33,6 +33,12 @@ From column: _RECORDS / ObjectLabel_
 return getValue("ObjectURI") + "/id"
 ```
 
+#### _MediumURI_
+From column: _RECORDS / Medium_
+``` python
+return getValue("ObjectURI") + "/medium"
+```
+
 
 ## Selections
 
@@ -40,6 +46,7 @@ return getValue("ObjectURI") + "/id"
 | Column | Property | Class |
 |  ----- | -------- | ----- |
 | _Medium_ | `rdf:value` | `crm:E33_Linguistic_Object1`|
+| _MediumURI_ | `uri` | `crm:E33_Linguistic_Object1`|
 | _ObjectID_ | `rdf:value` | `crm:E42_Identifier1`|
 | _ObjectID_URI_ | `uri` | `crm:E42_Identifier1`|
 | _ObjectLabel_ | `rdfs:label` | `crm:E42_Identifier1`|
