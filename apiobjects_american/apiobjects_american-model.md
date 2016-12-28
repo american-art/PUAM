@@ -18,6 +18,11 @@ Literal Type: ``
 <br/>Language: ``
 <br/>isUri: `true`
 
+#### Literal Node: `http://vocab.getty.edu/aat/300026687`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
 
 ## PyTransforms
 #### _ObjectLabel_
@@ -50,12 +55,20 @@ From column: _RECORDS / DimensionsLabel_
 return getValue("ObjectURI") + "/dimensions"
 ```
 
+#### _CreditLineURI_
+From column: _RECORDS / CreditLine_
+``` python
+return getValue("ObjectURI") + "/credit_line"
+```
+
 
 ## Selections
 
 ## Semantic Types
 | Column | Property | Class |
 |  ----- | -------- | ----- |
+| _CreditLine_ | `rdf:value` | `crm:E33_Linguistic_Object3`|
+| _CreditLineURI_ | `uri` | `crm:E33_Linguistic_Object3`|
 | _DimensionsLabel_ | `rdf:value` | `crm:E33_Linguistic_Object2`|
 | _DimensionsURI_ | `uri` | `crm:E33_Linguistic_Object2`|
 | _Medium_ | `rdf:value` | `crm:E33_Linguistic_Object1`|
@@ -72,6 +85,8 @@ return getValue("ObjectURI") + "/dimensions"
 | `crm:E22_Man-Made_Object1` | `crm:P1_is_identified_by` | `crm:E42_Identifier1`|
 | `crm:E22_Man-Made_Object1` | `crm:P67i_is_referred_to_by` | `crm:E33_Linguistic_Object1`|
 | `crm:E22_Man-Made_Object1` | `crm:P67i_is_referred_to_by` | `crm:E33_Linguistic_Object2`|
+| `crm:E22_Man-Made_Object1` | `crm:P67i_is_referred_to_by` | `crm:E33_Linguistic_Object3`|
 | `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300264237`|
 | `crm:E33_Linguistic_Object2` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300266036`|
+| `crm:E33_Linguistic_Object3` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300026687`|
 | `crm:E42_Identifier1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404621`|
