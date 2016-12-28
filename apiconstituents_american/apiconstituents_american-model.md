@@ -177,8 +177,8 @@ return getValue("MiddleNameURI") + "/type"
 | `crm:E42_Identifier1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
 | `crm:E55_Type1` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404845`|
 | `crm:E55_Type2` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404662`|
-| `crm:E55_Type3` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404651`|
-| `crm:E55_Type4` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404652`|
+| `crm:E55_Type3` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404651`|
+| `crm:E55_Type4` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404652`|
 | `crm:E55_Type5` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404654`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation3`|
 | `crm:E82_Actor_Appellation1` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation4`|
