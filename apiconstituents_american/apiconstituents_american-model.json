@@ -2700,14 +2700,14 @@
                 "modelIds": null
             },
             {
-                "id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type3---http://www.cidoc-crm.org/cidoc-crm/P2_has_type---http://vocab.getty.edu/aat/3004046511",
+                "id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type3---http://www.w3.org/2004/02/skos/core#broadMatch---http://vocab.getty.edu/aat/3004046511",
                 "weight": 0.01,
                 "type": "ObjectPropertyLink",
                 "label": {
-                    "uri": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "rdfsLabel": "has type"
+                    "uri": "http://www.w3.org/2004/02/skos/core#broadMatch",
+                    "rdfsLabel": "has broader match"
                 },
-                "objectPropertyType": "None",
+                "objectPropertyType": "WithoutDomainAndRange",
                 "status": "ForcedByUser",
                 "keyInfo": "None",
                 "modelIds": null
@@ -2725,14 +2725,14 @@
                 "modelIds": null
             },
             {
-                "id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type4---http://www.cidoc-crm.org/cidoc-crm/P2_has_type---http://vocab.getty.edu/aat/3004046521",
+                "id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type4---http://www.w3.org/2004/02/skos/core#broadMatch---http://vocab.getty.edu/aat/3004046521",
                 "weight": 0.01,
                 "type": "ObjectPropertyLink",
                 "label": {
-                    "uri": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
-                    "rdfsLabel": "has type"
+                    "uri": "http://www.w3.org/2004/02/skos/core#broadMatch",
+                    "rdfsLabel": "has broader match"
                 },
-                "objectPropertyType": "None",
+                "objectPropertyType": "WithoutDomainAndRange",
                 "status": "ForcedByUser",
                 "keyInfo": "None",
                 "modelIds": null
