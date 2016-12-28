@@ -7,25 +7,33 @@ label="model"
 n2[style="filled",color="white",fillcolor="lightgray",label="E39_Actor1"];
 n3[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentURI"];
 n4[style="filled",color="white",fillcolor="lightgray",label="E82_Actor_Appellation1"];
-n5[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
-n6[shape="plaintext",style="filled",fillcolor="gold",label="DisplayName"];
-n7[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentID_URI"];
-n8[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
-n9[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentID"];
-n10[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentLabel"];
-n11[shape="plaintext",style="filled",fillcolor="gold",label="AppellationURI"];
-n12[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
-n13[shape="plaintext",style="filled",fillcolor="gold",label="AppellationValue"];
+n5[style="filled",color="white",fillcolor="lightgray",label="E82_Actor_Appellation2"];
+n6[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="DisplayName"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentID_URI"];
+n9[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentID"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentLabel"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="AppellationURI"];
+n13[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="AppellationValue"];
+n15[shape="plaintext",style="filled",fillcolor="gold",label="AlphaSortURI"];
+n16[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404672"];
+n17[shape="plaintext",style="filled",fillcolor="gold",label="AlphaSort"];
 }
 n2 -> n3[color="brown",fontcolor="black",label="classLink"]
 n2 -> n4[color="brown",fontcolor="black",label="P131_is_identified_by"]
-n2 -> n5[color="brown",fontcolor="black",label="P1_is_identified_by"]
-n2 -> n6[color="brown",fontcolor="black",label="label"]
-n5 -> n7[color="brown",fontcolor="black",label="classLink"]
-n5 -> n8[color="brown",fontcolor="black",label="P2_has_type"]
-n5 -> n9[color="brown",fontcolor="black",label="value"]
-n5 -> n10[color="brown",fontcolor="black",label="label"]
-n4 -> n11[color="brown",fontcolor="black",label="classLink"]
-n4 -> n12[color="brown",fontcolor="black",label="P2_has_type"]
-n4 -> n13[color="brown",fontcolor="black",label="value"]
+n2 -> n5[color="brown",fontcolor="black",label="P131_is_identified_by"]
+n2 -> n6[color="brown",fontcolor="black",label="P1_is_identified_by"]
+n2 -> n7[color="brown",fontcolor="black",label="label"]
+n6 -> n8[color="brown",fontcolor="black",label="classLink"]
+n6 -> n9[color="brown",fontcolor="black",label="P2_has_type"]
+n6 -> n10[color="brown",fontcolor="black",label="value"]
+n6 -> n11[color="brown",fontcolor="black",label="label"]
+n4 -> n12[color="brown",fontcolor="black",label="classLink"]
+n4 -> n13[color="brown",fontcolor="black",label="P2_has_type"]
+n4 -> n14[color="brown",fontcolor="black",label="value"]
+n5 -> n15[color="brown",fontcolor="black",label="classLink"]
+n5 -> n16[color="brown",fontcolor="black",label="P2_has_type"]
+n5 -> n17[color="brown",fontcolor="black",label="value"]
 }
