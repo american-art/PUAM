@@ -1,0 +1,17 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="apiobjtitlexrefs_american.json"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n4[style="filled",color="white",fillcolor="lightgray",label="E35_Title1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="TitleURI"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="Title"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="classLink"]
+n2 -> n4[color="brown",fontcolor="black",label="P102_has_title"]
+n4 -> n5[color="brown",fontcolor="black",label="classLink"]
+n4 -> n6[color="brown",fontcolor="black",label="value"]
+}
