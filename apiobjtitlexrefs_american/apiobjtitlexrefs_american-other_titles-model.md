@@ -39,7 +39,7 @@ return getValue("TitleURI") + "/id"
 #### _TitleTypeURI_
 From column: _RECORDS / ObjectID_
 ``` python
-return getValue("ObjectURI") + "/title_type"
+return getValue("TitleURI") + "/title_type"
 ```
 
 
