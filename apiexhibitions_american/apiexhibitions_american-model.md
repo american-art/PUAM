@@ -3,6 +3,11 @@
 ## Add Column
 
 ## Add Node/Literal
+#### Literal Node: `<http://vocab.getty.edu/aat/300404670>`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
 
 ## PyTransforms
 #### _ExhibitionURI_
@@ -40,6 +45,12 @@ From column: _RECORDS / ExhTitle_
 return getValue("ExhibitionURI") + "/appellation"
 ```
 
+#### _ExhibitionAppellationTypeURI_
+From column: _RECORDS / ExhibitionAppellationURI_
+``` python
+return getValue("ExhibitionURI") + "/appellation_type"
+```
+
 
 ## Selections
 
@@ -52,6 +63,7 @@ return getValue("ExhibitionURI") + "/appellation"
 | _ExhCitation_ | `crm:P3_has_note` | `crm:E33_Linguistic_Object1`|
 | _ExhTitle_ | `rdf:value` | `crm:E41_Appellation1`|
 | _ExhibCitationURI_ | `uri` | `crm:E33_Linguistic_Object1`|
+| _ExhibitionAppellationTypeURI_ | `uri` | `crm:E55_Type1`|
 | _ExhibitionAppellationURI_ | `uri` | `crm:E41_Appellation1`|
 | _ExhibitionID_ | `rdfs:label` | `crm:E42_Identifier1`|
 | _ExhibitionID_URI_ | `uri` | `crm:E42_Identifier1`|
@@ -62,6 +74,8 @@ return getValue("ExhibitionURI") + "/appellation"
 ## Links
 | From | Property | To |
 |  --- | -------- | ---|
+| `crm:E41_Appellation1` | `crm:P2_has_type` | `crm:E55_Type1`|
+| `crm:E55_Type1` | `skos:broadMatch` | `xsd:<http://vocab.getty.edu/aat/300404670>`|
 | `crm:E5_Event1` | `crm:P129_is_about` | `crm:E33_Linguistic_Object1`|
 | `crm:E5_Event1` | `crm:P1_is_identified_by` | `crm:E41_Appellation1`|
 | `crm:E5_Event1` | `crm:P48_has_preferred_identifier` | `crm:E42_Identifier1`|
