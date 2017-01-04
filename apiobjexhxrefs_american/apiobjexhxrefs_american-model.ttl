@@ -1,996 +1,514 @@
-@prefix dbtune: <http://dbtune.org/bbc/peel/work/> .
-@prefix ns1: <http://qudt.org/1.1/schema/quantity#> .
-@prefix geonames: <http://sws.geonames.org/> .
-@prefix yago: <http://mpii.de/yago/resource/> .
-@prefix thesUnit: <http://collection.britishmuseum.org/id/thesauri/unit/> .
-@prefix opencyc: <http://sw.opencyc.org/concept/> .
-@prefix crm: <http://erlangen-crm.org/current/> .
-@prefix id: <http://collection.britishmuseum.org/id/> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix omv: <http://omv.ontoware.org/2005/05/ontology#> .
-@prefix ns2: <http://qudt.org/1.1/schema/qudt#> .
-@prefix generations: <http://www.owl-ontologies.com/generations.owl#> .
-@prefix ns3: <http://qudt.org/1.1/vocab/unit#> .
-@prefix music-ont: <http://purl.org/ontology/mo/> .
-@prefix geo-pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix factbook: <http://www.daml.org/2001/12/factbook/factbook-ont#> .
-@prefix ns4: <http://qudt.org/1.1/vocab/quantity#> .
-@prefix quantity: <http://qudt.org/schema/quantity#> .
-@prefix fb: <http://rdf.freebase.com/ns/> .
-@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
-@prefix geo-ont: <http://www.geonames.org/ontology#> .
-@prefix wordnet16: <http://xmlns.com/wordnet/1.6/> .
-@prefix void: <http://rdfs.org/ns/void#> .
-@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
-@prefix thesDimension: <http://collection.britishmuseum.org/id/thesauri/dimension/> .
-@prefix oasis: <http://psi.oasis-open.org/iso/639/#> .
-@prefix csw: <http://semantic-web.at/ontologies/csw.owl#> .
-@prefix ns5: <http://voag.linkedmodel.org/1.0/schema/voag#> .
-@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dcam: <http://purl.org/dc/dcam/> .
-@prefix bbc-pont: <http://purl.org/ontology/po/> .
-@prefix ff: <http://factforge.net/> .
-@prefix dimension: <http://qudt.org/schema/dimension#> .
-@prefix qudt-unit: <http://qudt.org/vocab/unit#> .
-@prefix ot: <http://www.ontotext.com/> .
-@prefix ns6: <http://www.linkedmodel.org/1.2/schema/vaem#> .
-@prefix lingvoj: <http://www.lingvoj.org/ontology#> .
-@prefix umbel-ac: <http://umbel.org/umbel/ac/> .
-@prefix opencyc-en: <http://sw.opencyc.org/2008/06/10/concept/en/> .
-@prefix pkm: <http://proton.semanticweb.org/protonkm#> .
-@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
-@prefix ptop: <http://www.ontotext.com/proton/protontop#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix umbel: <http://umbel.org/umbel#> .
-@prefix ns7: <http://qudt.org/1.1/schema/dimension#> .
-@prefix qudt: <http://qudt.org/schema/qudt#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dc-term: <http://purl.org/dc/terms/> .
-@prefix pext: <http://proton.semanticweb.org/protonext#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix saam-ont: <http://collection.americanart.si.edu/id/ontologies/> .
-@prefix ns8: <http://qudt.org/1.1/vocab/dimensionalunit#> .
-@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
-@prefix wordn-sc: <http://www.w3.org/2006/03/wn/wn20/schema/> .
-@prefix ns9: <http://www.linkedmodel.org/1.0/schema/dtype#> .
-@prefix bmo: <http://collection.britishmuseum.org/id/ontology/> .
-@prefix dbp-prop: <http://dbpedia.org/property/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix wot: <http://xmlns.com/wot/0.1/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix umbel-sc: <http://umbel.org/umbel/sc/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix wordnet: <http://www.w3.org/2006/03/wn/wn20/instances/> .
-@prefix ns10: <http://qudt.org/1.1/vocab/dimension#> .
-@prefix ub: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#> .
-@prefix idThes: <http://collection.britishmuseum.org/id/thesauri/> .
-@prefix creativecommons: <http://creativecommons.org/ns#> .
-@prefix sw-vocab: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix gr: <http://purl.org/goodrelations/v1#> .
-@prefix psys: <http://proton.semanticweb.org/protonsys#> .
-@prefix rso: <http://www.researchspace.org/ontology/> .
-@prefix umbel-en: <http://umbel.org/umbel/ne/wikipedia/> .
-@prefix om: <http://www.ontotext.com/owlim/> .
-@prefix dbp-ont: <http://dbpedia.org/ontology/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix nytimes: <http://data.nytimes.com/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1aehp3kijx1 a km-dev:R2RMLMapping ;
+_:node1b5lg302gx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "apiobjexhxrefs_american.json" ;
-	km-dev:modelPublicationTime "1458738156116"^^xsd:long ;
+	km-dev:modelPublicationTime "1483558977616"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ExhibitionID\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ExhCitation\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ObjectID\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ObjectURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ExhCitation\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ExhCitationURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ExhibitionURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"AltObjectURI\"}]]" ;
-	km-dev:hasModelLabel "apiobjexhxrefs_american.json" ;
-	km-dev:hasBaseURI "http://americanartcollaborative.org/puam/" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ObjectID\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ExhibitionID\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ObjectURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ExhibitionURI\"}]]" ;
+	km-dev:hasModelLabel "apiobjexhxrefs_american" ;
+	km-dev:hasBaseURI "http://artmuseum.princeton.edu/" ;
 	km-dev:hasWorksheetHistory """[
     {
-        \"tags\": [\"Transformation\"],
+        \"commandName\": \"SubmitPythonTransformationCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"RECORDS\"},
                     {\"columnName\": \"ObjectID\"}
-                ],
-                \"type\": \"hNodeId\"
+                ]
             },
             {
                 \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
             },
             {
                 \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
             },
             {
                 \"name\": \"newColumnName\",
-                \"value\": \"ObjectURI\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"ObjectURI\"
             },
             {
                 \"name\": \"transformationCode\",
-                \"value\": \"return \\\"object/\\\"+getValue(\\\"ObjectID\\\")\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"return \\\"object/\\\" + getValue(\\\"ObjectID\\\")\"
             },
             {
                 \"name\": \"errorDefaultValue\",
-                \"value\": \"\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"\"
             },
             {
                 \"name\": \"isJSONOutput\",
-                \"value\": \"false\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"false\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectID\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectID\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectURI\\\"}]}]\"
             }
         ],
-        \"commandName\": \"SubmitPythonTransformationCommand\"
+        \"tags\": [\"Transformation\"]
     },
     {
-        \"tags\": [\"Transformation\"],
+        \"commandName\": \"SubmitPythonTransformationCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"ObjectURI\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newColumnName\",
-                \"value\": \"AltObjectURI\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"transformationCode\",
-                \"value\": \"return \\\"artmuseum.princeton.edu/collections/object/\\\" + getValue(\\\"ObjectID\\\")\\r\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"errorDefaultValue\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"isJSONOutput\",
-                \"value\": \"false\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectID\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"AltObjectURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SubmitPythonTransformationCommand\"
-    },
-    {
-        \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"RECORDS\"},
                     {\"columnName\": \"ExhibitionID\"}
-                ],
-                \"type\": \"hNodeId\"
+                ]
             },
             {
                 \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
             },
             {
                 \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
             },
             {
                 \"name\": \"newColumnName\",
-                \"value\": \"ExhibitionURI\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"ExhibitionURI\"
             },
             {
                 \"name\": \"transformationCode\",
-                \"value\": \"return \\\"exhibition/\\\"+getValue(\\\"ExhibitionID\\\")\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"exhibitID = getValue(\\\"ExhibitionID\\\")\\r\\nif exhibitID != \\\"\\\":\\r\\n    return \\\"exhibition/\\\" + exhibitID\\r\\nelse:\\r\\n    return \\\"\\\"\"
             },
             {
                 \"name\": \"errorDefaultValue\",
-                \"value\": \"\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"\"
             },
             {
                 \"name\": \"isJSONOutput\",
-                \"value\": \"false\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"false\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionID\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionID\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionURI\\\"}]}]\"
             }
         ],
-        \"commandName\": \"SubmitPythonTransformationCommand\"
+        \"tags\": [\"Transformation\"]
     },
     {
-        \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"ExhCitation\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newColumnName\",
-                \"value\": \"ExhCitationURI\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"transformationCode\",
-                \"value\": \"return getValue(\\\"ExhibitionURI\\\")+\\\"/citation\\\"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"errorDefaultValue\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"isJSONOutput\",
-                \"value\": \"false\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhCitationURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SubmitPythonTransformationCommand\"
-    },
-    {
-        \"tags\": [\"Transformation\"],
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
             },
             {
                 \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
             },
             {
                 \"name\": \"properties\",
+                \"type\": \"other\",
                 \"value\": {
-                    \"hasServiceProperties\": false,
+                    \"graphLabel\": \"apiobjexhxrefs_american\",
+                    \"hasBaseURI\": false,
                     \"hasPrefix\": false,
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": true,
-                    \"baseURI\": \"http://americanartcollaborative.org/puam/\"
-                },
-                \"type\": \"other\"
+                    \"hasServiceProperties\": false
+                }
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
             }
         ],
-        \"commandName\": \"SetWorksheetPropertiesCommand\"
+        \"tags\": [\"Transformation\"]
     },
     {
-        \"tags\": [\"SemanticType\"],
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://artmuseum.princeton.edu/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"hasGithubURL\": true,
+                    \"GithubURL\": \"https://github.com/american-art/PUAM/tree/master/apiobjexhxrefs_american\",
+                    \"baseURI\": \"\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"RECORDS\"},
                     {\"columnName\": \"ObjectURI\"}
-                ],
-                \"type\": \"hNodeId\"
+                ]
             },
             {
                 \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
             },
             {
                 \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
             },
             {
                 \"name\": \"metaPropertyName\",
-                \"value\": \"isUriOfClass\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
             },
             {
                 \"name\": \"metaPropertyUri\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object\"
             },
             {
                 \"name\": \"metaPropertyId\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object1\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object1\"
             },
             {
                 \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
                 \"value\": [{
+                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object\",
+                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object/E22_Man-Made_Object1 (add)\",
-                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object1\",
-                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object\"
-                }],
-                \"type\": \"other\"
+                    \"DomainLabel\": \"crm:E22_Man-Made_Object1 (add)\"
+                }]
             },
             {
                 \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": true
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectURI\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ObjectURI\\\"}]}]\"
             }
         ],
-        \"commandName\": \"SetMetaPropertyCommand\"
+        \"tags\": [\"SemanticType\"]
     },
     {
-        \"tags\": [\"SemanticType\"],
+        \"commandName\": \"SetMetaPropertyCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"AltObjectURI\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
-                    \"DomainLabel\": \"http://www.cidoc-crm.org/cidoc-crm/E42_Identifier/E42_Identifier1\",
-                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E42_Identifier1\",
-                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E42_Identifier\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"AltObjectURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"AltObjectURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"RECORDS\"},
                     {\"columnName\": \"ExhibitionURI\"}
-                ],
-                \"type\": \"hNodeId\"
+                ]
             },
             {
                 \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
             },
             {
                 \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
             },
             {
                 \"name\": \"metaPropertyName\",
-                \"value\": \"isUriOfClass\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
             },
             {
                 \"name\": \"metaPropertyUri\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E5_Event\"
             },
             {
                 \"name\": \"metaPropertyId\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity1\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E5_Event1\"
             },
             {
                 \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
                 \"value\": [{
+                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E5_Event\",
+                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E5_Event1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity/E7_Activity1 (add)\",
-                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity1\",
-                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity\"
-                }],
-                \"type\": \"other\"
+                    \"DomainLabel\": \"crm:E5_Event1 (add)\"
+                }]
             },
             {
                 \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": true
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionURI\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhibitionURI\\\"}]}]\"
             }
         ],
-        \"commandName\": \"SetMetaPropertyCommand\"
+        \"tags\": [\"SemanticType\"]
     },
     {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"ExhCitation\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://www.cidoc-crm.org/cidoc-crm/P3_has_note\",
-                    \"DomainLabel\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object/E33_Linguistic_Object1 (add)\",
-                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object1\",
-                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhCitation\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhCitation\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"ExhCitationURI\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyName\",
-                \"value\": \"isUriOfClass\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyUri\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyId\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object1\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object/E33_Linguistic_Object1\",
-                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object1\",
-                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhCitationURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ExhCitationURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetMetaPropertyCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
             },
             {
                 \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
             },
             {
                 \"name\": \"initialEdges\",
-                \"value\": [],
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": []
             },
             {
                 \"name\": \"alignmentId\",
-                \"value\": \"WSP3:WS1AL\",
-                \"type\": \"other\"
+                \"type\": \"other\",
+                \"value\": \"WSP3:WS5AL\"
             },
             {
                 \"name\": \"newEdges\",
+                \"type\": \"other\",
                 \"value\": [{
-                    \"edgeTargetUri\": \"http://www.cidoc-crm.org/cidoc-crm/E42_Identifier\",
-                    \"edgeId\": \"http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier\",
-                    \"edgeTargetId\": \"http://www.cidoc-crm.org/cidoc-crm/E42_Identifier1\",
-                    \"edgeSourceId\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object1\",
-                    \"edgeSourceUri\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP3:WS1AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [{
-                    \"edgeTargetUri\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity\",
+                    \"edgeTargetId\": \"http://www.cidoc-crm.org/cidoc-crm/E5_Event1\",
                     \"edgeId\": \"http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at\",
-                    \"edgeTargetId\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity1\",
+                    \"edgeTargetUri\": \"http://www.cidoc-crm.org/cidoc-crm/E5_Event\",
                     \"edgeSourceId\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object1\",
                     \"edgeSourceUri\": \"http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object\"
-                }],
-                \"type\": \"other\"
+                }]
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
             }
         ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP3:WS1AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [{
-                    \"edgeTargetUri\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity\",
-                    \"edgeId\": \"http://www.cidoc-crm.org/cidoc-crm/P129_is_about\",
-                    \"edgeTargetId\": \"http://www.cidoc-crm.org/cidoc-crm/E7_Activity1\",
-                    \"edgeSourceId\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object1\",
-                    \"edgeSourceUri\": \"http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+        \"tags\": [\"Modeling\"]
     }
 ]""" .
 
-km-dev:TriplesMap_b377cd91-0ced-4620-b065-3efff8e6a59e a rr:TriplesMap .
+km-dev:TriplesMap_ac8bee8b-f4c1-43e1-806f-c1779c9adc43 a rr:TriplesMap .
 
-_:node1aehp3kijx1 km-dev:hasTriplesMap km-dev:TriplesMap_b377cd91-0ced-4620-b065-3efff8e6a59e .
+_:node1b5lg302gx1 km-dev:hasTriplesMap km-dev:TriplesMap_ac8bee8b-f4c1-43e1-806f-c1779c9adc43 .
 
-km-dev:TriplesMap_b377cd91-0ced-4620-b065-3efff8e6a59e km-dev:isPartOfMapping _:node1aehp3kijx1 .
+km-dev:TriplesMap_ac8bee8b-f4c1-43e1-806f-c1779c9adc43 km-dev:isPartOfMapping _:node1b5lg302gx1 .
 
-_:node1aehp3kijx2 rr:tableName "apiobjexhxrefs_american.json" ;
+_:node1b5lg302gx2 rr:tableName "apiobjexhxrefs_american.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
+	km-dev:isPartOfMapping _:node1b5lg302gx1 .
 
-_:node1aehp3kijx1 km-dev:hasLogicalTable _:node1aehp3kijx2 .
+_:node1b5lg302gx1 km-dev:hasLogicalTable _:node1b5lg302gx2 .
 
-km-dev:TriplesMap_b377cd91-0ced-4620-b065-3efff8e6a59e rr:logicalTable _:node1aehp3kijx2 ;
-	rr:subjectMap _:node1aehp3kijx3 .
+km-dev:TriplesMap_ac8bee8b-f4c1-43e1-806f-c1779c9adc43 rr:logicalTable _:node1b5lg302gx2 ;
+	rr:subjectMap _:node1b5lg302gx3 .
 
-_:node1aehp3kijx1 km-dev:hasSubjectMap _:node1aehp3kijx3 .
+_:node1b5lg302gx1 km-dev:hasSubjectMap _:node1b5lg302gx3 .
 
-_:node1aehp3kijx3 km-dev:isPartOfMapping _:node1aehp3kijx1 ;
+_:node1b5lg302gx3 km-dev:isPartOfMapping _:node1b5lg302gx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object1" ;
-	rr:class <http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object> ;
+	rr:class crm:E22_Man-Made_Object ;
 	rr:template "object/{[\"RECORDS\",\"ObjectID\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_04a9bcea-0e19-4c4e-8a74-1083d5a19984 rr:predicate <http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at> .
+km-dev:PredicateObjectMap_b197d96f-37b5-4107-887d-5bbb3b4a6aea rr:predicate crm:P12i_was_present_at .
 
-km-dev:RefObjectMap_bc3bc624-a573-4523-88f2-8ec33f834e31 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_9651e5a5-6070-4b0e-93eb-55ec72437da6 ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
+km-dev:RefObjectMap_eaaac385-755f-4aa1-b2c1-62d4179ac821 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_56bb79f0-efc6-4a74-b1bc-d4ebcc27a2dd ;
+	km-dev:isPartOfMapping _:node1b5lg302gx1 .
 
-_:node1aehp3kijx1 km-dev:hasObjectMap km-dev:RefObjectMap_bc3bc624-a573-4523-88f2-8ec33f834e31 .
+_:node1b5lg302gx1 km-dev:hasObjectMap km-dev:RefObjectMap_eaaac385-755f-4aa1-b2c1-62d4179ac821 .
 
-km-dev:PredicateObjectMap_04a9bcea-0e19-4c4e-8a74-1083d5a19984 rr:objectMap km-dev:RefObjectMap_bc3bc624-a573-4523-88f2-8ec33f834e31 .
+km-dev:PredicateObjectMap_b197d96f-37b5-4107-887d-5bbb3b4a6aea rr:objectMap km-dev:RefObjectMap_eaaac385-755f-4aa1-b2c1-62d4179ac821 .
 
-km-dev:TriplesMap_b377cd91-0ced-4620-b065-3efff8e6a59e rr:predicateObjectMap km-dev:PredicateObjectMap_04a9bcea-0e19-4c4e-8a74-1083d5a19984 .
+km-dev:TriplesMap_ac8bee8b-f4c1-43e1-806f-c1779c9adc43 rr:predicateObjectMap km-dev:PredicateObjectMap_b197d96f-37b5-4107-887d-5bbb3b4a6aea .
 
-km-dev:PredicateObjectMap_04a9bcea-0e19-4c4e-8a74-1083d5a19984 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
+km-dev:PredicateObjectMap_b197d96f-37b5-4107-887d-5bbb3b4a6aea a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b5lg302gx1 .
 
-_:node1aehp3kijx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_04a9bcea-0e19-4c4e-8a74-1083d5a19984 .
+_:node1b5lg302gx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b197d96f-37b5-4107-887d-5bbb3b4a6aea .
 
-km-dev:PredicateObjectMap_e66edd85-e538-44e5-9144-22ee8830391d rr:predicate <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier> .
+km-dev:TriplesMap_56bb79f0-efc6-4a74-b1bc-d4ebcc27a2dd a rr:TriplesMap .
 
-km-dev:RefObjectMap_b8ae4aea-12d7-4480-87f9-9b9904b04c6b a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_d2e6ed51-ef01-4e84-ac75-f9933f85bbbd ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
+_:node1b5lg302gx1 km-dev:hasTriplesMap km-dev:TriplesMap_56bb79f0-efc6-4a74-b1bc-d4ebcc27a2dd .
 
-_:node1aehp3kijx1 km-dev:hasObjectMap km-dev:RefObjectMap_b8ae4aea-12d7-4480-87f9-9b9904b04c6b .
+km-dev:TriplesMap_56bb79f0-efc6-4a74-b1bc-d4ebcc27a2dd km-dev:isPartOfMapping _:node1b5lg302gx1 .
 
-km-dev:PredicateObjectMap_e66edd85-e538-44e5-9144-22ee8830391d rr:objectMap km-dev:RefObjectMap_b8ae4aea-12d7-4480-87f9-9b9904b04c6b .
-
-km-dev:TriplesMap_b377cd91-0ced-4620-b065-3efff8e6a59e rr:predicateObjectMap km-dev:PredicateObjectMap_e66edd85-e538-44e5-9144-22ee8830391d .
-
-km-dev:PredicateObjectMap_e66edd85-e538-44e5-9144-22ee8830391d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e66edd85-e538-44e5-9144-22ee8830391d .
-
-km-dev:TriplesMap_9651e5a5-6070-4b0e-93eb-55ec72437da6 a rr:TriplesMap .
-
-_:node1aehp3kijx1 km-dev:hasTriplesMap km-dev:TriplesMap_9651e5a5-6070-4b0e-93eb-55ec72437da6 .
-
-km-dev:TriplesMap_9651e5a5-6070-4b0e-93eb-55ec72437da6 km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx4 rr:tableName "apiobjexhxrefs_american.json" ;
+_:node1b5lg302gx4 rr:tableName "apiobjexhxrefs_american.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
+	km-dev:isPartOfMapping _:node1b5lg302gx1 .
 
-_:node1aehp3kijx1 km-dev:hasLogicalTable _:node1aehp3kijx4 .
+_:node1b5lg302gx1 km-dev:hasLogicalTable _:node1b5lg302gx4 .
 
-km-dev:TriplesMap_9651e5a5-6070-4b0e-93eb-55ec72437da6 rr:logicalTable _:node1aehp3kijx4 ;
-	rr:subjectMap _:node1aehp3kijx5 .
+km-dev:TriplesMap_56bb79f0-efc6-4a74-b1bc-d4ebcc27a2dd rr:logicalTable _:node1b5lg302gx4 ;
+	rr:subjectMap _:node1b5lg302gx5 .
 
-_:node1aehp3kijx1 km-dev:hasSubjectMap _:node1aehp3kijx5 .
+_:node1b5lg302gx1 km-dev:hasSubjectMap _:node1b5lg302gx5 .
 
-_:node1aehp3kijx5 km-dev:isPartOfMapping _:node1aehp3kijx1 ;
+_:node1b5lg302gx5 km-dev:isPartOfMapping _:node1b5lg302gx1 ;
 	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E7_Activity1" ;
-	rr:class <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
-	rr:template "exhibition/{[\"RECORDS\",\"ExhibitionID\"]}" .
-
-km-dev:TriplesMap_d2e6ed51-ef01-4e84-ac75-f9933f85bbbd a rr:TriplesMap .
-
-_:node1aehp3kijx1 km-dev:hasTriplesMap km-dev:TriplesMap_d2e6ed51-ef01-4e84-ac75-f9933f85bbbd .
-
-km-dev:TriplesMap_d2e6ed51-ef01-4e84-ac75-f9933f85bbbd km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx6 rr:tableName "apiobjexhxrefs_american.json" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasLogicalTable _:node1aehp3kijx6 .
-
-km-dev:TriplesMap_d2e6ed51-ef01-4e84-ac75-f9933f85bbbd rr:logicalTable _:node1aehp3kijx6 ;
-	rr:subjectMap _:node1aehp3kijx7 .
-
-_:node1aehp3kijx1 km-dev:hasSubjectMap _:node1aehp3kijx7 .
-
-_:node1aehp3kijx7 km-dev:isPartOfMapping _:node1aehp3kijx1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier1" ;
-	rr:class <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
-	rr:termType rr:BlankNode ;
-	km-dev:namePrefix "E42_Identifier1" .
-
-km-dev:PredicateObjectMap_7d3b838a-fe32-49e6-86be-5d6348cedbb3 rr:predicate rdfs:label .
-
-_:node1aehp3kijx8 rr:constant "artmuseum.princeton.edu/collections/object/{[\"RECORDS\",\"ObjectID\"]}" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasObjectMap _:node1aehp3kijx8 .
-
-km-dev:PredicateObjectMap_7d3b838a-fe32-49e6-86be-5d6348cedbb3 rr:objectMap _:node1aehp3kijx8 .
-
-km-dev:TriplesMap_d2e6ed51-ef01-4e84-ac75-f9933f85bbbd rr:predicateObjectMap km-dev:PredicateObjectMap_7d3b838a-fe32-49e6-86be-5d6348cedbb3 .
-
-km-dev:PredicateObjectMap_7d3b838a-fe32-49e6-86be-5d6348cedbb3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7d3b838a-fe32-49e6-86be-5d6348cedbb3 .
-
-km-dev:TriplesMap_6dd33759-35f6-4e64-be5c-d5256d6feb3c a rr:TriplesMap .
-
-_:node1aehp3kijx1 km-dev:hasTriplesMap km-dev:TriplesMap_6dd33759-35f6-4e64-be5c-d5256d6feb3c .
-
-km-dev:TriplesMap_6dd33759-35f6-4e64-be5c-d5256d6feb3c km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx9 rr:tableName "apiobjexhxrefs_american.json" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasLogicalTable _:node1aehp3kijx9 .
-
-km-dev:TriplesMap_6dd33759-35f6-4e64-be5c-d5256d6feb3c rr:logicalTable _:node1aehp3kijx9 ;
-	rr:subjectMap _:node1aehp3kijx10 .
-
-_:node1aehp3kijx1 km-dev:hasSubjectMap _:node1aehp3kijx10 .
-
-_:node1aehp3kijx10 km-dev:isPartOfMapping _:node1aehp3kijx1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object1" ;
-	rr:class <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> ;
-	rr:template "{[\"RECORDS\",\"ExhibitionURI\"]}/citation" .
-
-km-dev:PredicateObjectMap_b32260f3-318a-4976-81af-a3135c0744a5 rr:predicate <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> .
-
-km-dev:RefObjectMap_7b10be32-03e6-4876-867c-57e94e649188 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_9651e5a5-6070-4b0e-93eb-55ec72437da6 ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasObjectMap km-dev:RefObjectMap_7b10be32-03e6-4876-867c-57e94e649188 .
-
-km-dev:PredicateObjectMap_b32260f3-318a-4976-81af-a3135c0744a5 rr:objectMap km-dev:RefObjectMap_7b10be32-03e6-4876-867c-57e94e649188 .
-
-km-dev:TriplesMap_6dd33759-35f6-4e64-be5c-d5256d6feb3c rr:predicateObjectMap km-dev:PredicateObjectMap_b32260f3-318a-4976-81af-a3135c0744a5 .
-
-km-dev:PredicateObjectMap_b32260f3-318a-4976-81af-a3135c0744a5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b32260f3-318a-4976-81af-a3135c0744a5 .
-
-km-dev:PredicateObjectMap_07b872d5-9373-41fe-8c53-17f608a7cc83 rr:predicate <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
-
-_:node1aehp3kijx11 rr:column "[\"RECORDS\",\"ExhCitation\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasObjectMap _:node1aehp3kijx11 .
-
-km-dev:PredicateObjectMap_07b872d5-9373-41fe-8c53-17f608a7cc83 rr:objectMap _:node1aehp3kijx11 .
-
-km-dev:TriplesMap_6dd33759-35f6-4e64-be5c-d5256d6feb3c rr:predicateObjectMap km-dev:PredicateObjectMap_07b872d5-9373-41fe-8c53-17f608a7cc83 .
-
-km-dev:PredicateObjectMap_07b872d5-9373-41fe-8c53-17f608a7cc83 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aehp3kijx1 .
-
-_:node1aehp3kijx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_07b872d5-9373-41fe-8c53-17f608a7cc83 .
+	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E5_Event1" ;
+	rr:class crm:E5_Event ;
+	rr:template "{[\"RECORDS\",\"ExhibitionURI\"]}" .
