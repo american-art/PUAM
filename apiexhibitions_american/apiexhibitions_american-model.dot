@@ -9,7 +9,7 @@ n3[shape="plaintext",style="filled",fillcolor="gold",label="ExhibCitationURI"];
 n4[shape="plaintext",style="filled",fillcolor="gold",label="ExhCitation"];
 n5[style="filled",color="white",fillcolor="lightgray",label="E41_Appellation1"];
 n6[shape="plaintext",style="filled",fillcolor="gold",label="ExhibitionAppellationURI"];
-n7[style="filled",color="white",fillcolor="lightgray",label="E55_Type1"];
+n7[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
 n8[shape="plaintext",style="filled",fillcolor="gold",label="ExhTitle"];
 n9[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
 n10[shape="plaintext",style="filled",fillcolor="gold",label="ExhibitionID_URI"];
@@ -19,10 +19,8 @@ n13[shape="plaintext",style="filled",fillcolor="gold",label="ExhibitionTimeSpanU
 n14[shape="plaintext",style="filled",fillcolor="gold",label="BeginISODate"];
 n15[shape="plaintext",style="filled",fillcolor="gold",label="EndISODate"];
 n16[shape="plaintext",style="filled",fillcolor="gold",label="DisplayDate"];
-n17[shape="plaintext",style="filled",fillcolor="gold",label="ExhibitionAppellationTypeURI"];
-n18[shape="plaintext",style="filled",fillcolor="#CC7799",label="<http://vocab.getty.edu/aat/300404670>"];
-n19[style="filled",color="white",fillcolor="lightgray",label="E5_Event1"];
-n20[shape="plaintext",style="filled",fillcolor="gold",label="ExhibitionURI"];
+n17[style="filled",color="white",fillcolor="lightgray",label="E5_Event1"];
+n18[shape="plaintext",style="filled",fillcolor="gold",label="ExhibitionURI"];
 }
 n2 -> n3[color="brown",fontcolor="black",label="classLink"]
 n2 -> n4[color="brown",fontcolor="black",label="P3_has_note"]
@@ -35,11 +33,9 @@ n12 -> n13[color="brown",fontcolor="black",label="classLink"]
 n12 -> n14[color="brown",fontcolor="black",label="P82a_begin_of_the_begin"]
 n12 -> n15[color="brown",fontcolor="black",label="P82b_end_of_the_end"]
 n12 -> n16[color="brown",fontcolor="black",label="label"]
-n7 -> n17[color="brown",fontcolor="black",label="classLink"]
-n7 -> n18[color="brown",fontcolor="black",label="broadMatch"]
-n19 -> n20[color="brown",fontcolor="black",label="classLink"]
-n19 -> n2[color="brown",fontcolor="black",label="P129_is_about"]
-n19 -> n5[color="brown",fontcolor="black",label="P1_is_identified_by"]
-n19 -> n9[color="brown",fontcolor="black",label="P48_has_preferred_identifier"]
-n19 -> n12[color="brown",fontcolor="black",label="P4_has_time-span"]
+n17 -> n18[color="brown",fontcolor="black",label="classLink"]
+n17 -> n2[color="brown",fontcolor="black",label="P129_is_about"]
+n17 -> n5[color="brown",fontcolor="black",label="P1_is_identified_by"]
+n17 -> n9[color="brown",fontcolor="black",label="P48_has_preferred_identifier"]
+n17 -> n12[color="brown",fontcolor="black",label="P4_has_time-span"]
 }
