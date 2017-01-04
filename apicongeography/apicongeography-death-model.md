@@ -18,7 +18,7 @@ return "constituent/" + getValue("ConstituentID")
 #### _DeathEventURI_
 From column: _RECORDS / ConstituentURI_
 ``` python
-return getValue("ConstituentURI") + "/death_event"
+return getValue("ConstituentURI") + "/death"
 ```
 
 #### _DeathPlaceURI_
