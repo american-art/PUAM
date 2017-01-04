@@ -14,7 +14,7 @@ return "constituent/" + getValue("ConstituentID")
 #### _BirthEventURI_
 From column: _RECORDS / ConstituentURI_
 ``` python
-return getValue("ConstituentURI") + "/birth_event"
+return getValue("ConstituentURI") + "/birth"
 ```
 
 #### _BirthPlaceURI_
