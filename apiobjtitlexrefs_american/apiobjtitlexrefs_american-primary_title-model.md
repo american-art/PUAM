@@ -44,7 +44,7 @@ else:
 #### _TitleIDURI_
 From column: _RECORDS / TitleID_
 ``` python
-return getValue("TitleURI") + "/id/" + getValue("TitleID")
+return getValue("TitleURI") + "/id"
 ```
 
 
