@@ -18,7 +18,10 @@ return "constituent/" + getValue("ConstituentID")
 #### _DeathEventURI_
 From column: _RECORDS / ConstituentURI_
 ``` python
-return getValue("ConstituentURI") + "/death"
+if getValue("Location"):
+    return getValue("ConstituentURI") + "/death"
+else:
+    return ""
 ```
 
 #### _DeathPlaceURI_
@@ -27,9 +30,24 @@ From column: _RECORDS / DeathEventURI_
 def cleanURI(prefix, value):
     uri_value = value.lower().replace(' ', '_')
     return UM.uri_from_fields(prefix + uri_value)
-prefix = getValue("DeathEventURI") + "/"
-value = getValue("ConGeoCode")
-return cleanURI(prefix, value)
+if getValue("Location"):
+    prefix = getValue("DeathEventURI") + "/"
+    value = getValue("ConGeoCode")
+    return cleanURI(prefix, value)
+else:
+    return ""
+```
+
+#### _Location_
+From column: _RECORDS / City_
+``` python
+if getValue("City"):
+    place = getValue("City")
+    if place and getValue("Country"):
+        place = place+", "+getValue("Country")
+    return place
+else:
+    return ""
 ```
 
 
@@ -45,10 +63,10 @@ return getValue("ConGeoCode") != "Death Place"
 ## Semantic Types
 | Column | Property | Class |
 |  ----- | -------- | ----- |
-| _City_ | `rdfs:label` | `crm:E53_Place1`|
 | _ConstituentURI_ | `uri` | `crm:E39_Actor1`|
 | _DeathEventURI_ | `uri` | `crm:E64_End_of_Existence1`|
 | _DeathPlaceURI_ | `uri` | `crm:E53_Place1`|
+| _Location_ | `rdfs:label` | `crm:E53_Place1`|
 
 
 ## Links
