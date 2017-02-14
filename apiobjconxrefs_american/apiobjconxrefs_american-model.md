@@ -14,7 +14,10 @@ return "object/" + getValue("ObjectID")
 #### _ConstituentURI_
 From column: _RECORDS / ConstituentID_
 ``` python
-return "constituent/" + getValue("ConstituentID")
+if getValue("Role")=="Artist":
+    return "constituent/" + getValue("ConstituentID")
+else:
+    return ""
 ```
 
 #### _ProductionURI_
