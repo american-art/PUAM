@@ -89,121 +89,187 @@ return getValue("ConstituentURI") + "/alpha_sort"
 #### _NameTitleURI_
 From column: _RECORDS / NameTitle_
 ``` python
-return getValue("AppellationURI") + "/name_title"
+if getValue("NameTitle"):
+    return getValue("AppellationURI") + "/name_title"
+else:
+    ""
 ```
 
 #### _NameTitle_TypeURI_
 From column: _RECORDS / NameTitleURI_
 ``` python
-return getValue("NameTitleURI") + "/type"
+if getValue("NameTitle"):
+    return getValue("NameTitleURI") + "/type"
+else:
+    ""
 ```
 
 #### _SuffixURI_
 From column: _RECORDS / Suffix_
 ``` python
-return getValue("AppellationURI") + "/suffix"
+if getValue("Suffix"):
+    return getValue("AppellationURI") + "/suffix"
+else:
+    return ""
 ```
 
 #### _SuffixTypeURI_
 From column: _RECORDS / SuffixURI_
 ``` python
-return getValue("SuffixURI") + "/type"
+if getValue("Suffix"):
+    return getValue("SuffixURI") + "/type"
+else:
+    return ""
 ```
 
 #### _GivenNameURI_
 From column: _RECORDS / FirstName_
 ``` python
-return getValue("AppellationURI") + "/given_name"
+if getValue("FirstName"):
+    return getValue("AppellationURI") + "/given_name"
+else:
+    ""
 ```
 
 #### _GivenNameTypeURI_
 From column: _RECORDS / GivenNameURI_
 ``` python
-return getValue("GivenNameURI") + "/type"
+if getValue("FirstName"):
+    return getValue("GivenNameURI") + "/type"
+else:
+    return ""
 ```
 
 #### _FamilyNameURI_
 From column: _RECORDS / LastName_
 ``` python
-return getValue("AppellationURI") + "/family_name"
+if getValue("LastName"):
+    return getValue("AppellationURI") + "/family_name"
+else:
+    return ""
 ```
 
 #### _FamilyNameTypeURI_
 From column: _RECORDS / FamilyNameURI_
 ``` python
-return getValue("FamilyNameURI") + "/type"
+if getValue("LastName"):
+    return getValue("FamilyNameURI") + "/type"
+else:
+    return ""
 ```
 
 #### _MiddleNameURI_
 From column: _RECORDS / MiddleName_
 ``` python
-return getValue("AppellationURI") + "/middle_name"
+if getValue("MiddleName"):
+    return getValue("AppellationURI") + "/middle_name"
+else:
+    return ""
 ```
 
 #### _MiddleNameTypeURI_
 From column: _RECORDS / MiddleNameURI_
 ``` python
-return getValue("MiddleNameURI") + "/type"
+if getValue("MiddleName"):
+    return getValue("MiddleNameURI") + "/type"
+else:
+    return ""
 ```
 
 #### _EarliestBirthdate_
 From column: _RECORDS / BeginDate_
 ``` python
-return getValue("BeginDate")
+if getValue("BeginDate") and getValue("BeginDate")!="0":
+    return getValue("BeginDate")
+else:
+    return ""
 ```
 
 #### _LatestBirthdate_
 From column: _RECORDS / EarliestBirthdate_
 ``` python
-return getValue("BeginDate")
+if getValue("BeginDate") and getValue("BeginDate")!="0":
+    return getValue("BeginDate")
+else:
+    return ""
 ```
 
 #### _BirthURI_
 From column: _RECORDS / BeginDate_
 ``` python
-return getValue("ConstituentURI") + "/birth"
+if getValue("BeginDate") and getValue("BeginDate")!="0":
+    return getValue("ConstituentURI") + "/birth"
+else:
+    return ""
 ```
 
 #### _BirthTimeURI_
 From column: _RECORDS / BirthURI_
 ``` python
-return getValue("BirthURI") + "/time"
+if getValue("BeginDate") and getValue("BeginDate")!="0":
+    return getValue("BirthURI") + "/time"
+else:
+    return ""
 ```
 
 #### _EarliestDeathdate_
 From column: _RECORDS / EndDate_
 ``` python
-return getValue("EndDate")
+if getValue("EndDate") and getValue("EndDate")!="0":
+    return getValue("EndDate")
+else:
+    return ""
 ```
 
 #### _LatestDeathdate_
 From column: _RECORDS / EarliestDeathdate_
 ``` python
-return getValue("EndDate")
+if getValue("EndDate") and getValue("EndDate")!="0":
+    return getValue("EndDate")
+else:
+    return ""
 ```
 
 #### _DeathURI_
 From column: _RECORDS / EndDate_
 ``` python
-return getValue("ConstituentURI") + "/death"
+if getValue("EndDate") and getValue("EndDate")!="0":
+    return getValue("ConstituentURI") + "/death"
+else:
+    return ""
 ```
 
 #### _DeathTimeURI_
 From column: _RECORDS / DeathURI_
 ``` python
-return getValue("DeathURI") + "/time"
+if getValue("EndDate") and getValue("EndDate")!="0":
+    return getValue("DeathURI") + "/time"
+else:
+    return ""
 ```
 
 #### _NationalityURI_
 From column: _RECORDS / Nationality_
 ``` python
-return getValue("ConstituentURI") + "/group"
+if getValue("Nationality"):
+    return getValue("ConstituentURI") + "/group"
+else:
+    return ""
 ```
 
 #### _BiographyURI_
 From column: _RECORDS / Biography_
 ``` python
-return getValue("ConstituentURI") + "/biography"
+if getValue("Biography"):
+    return getValue("ConstituentURI") + "/biography"
+else:
+    return ""
+```
+
+#### _DisplayDateCopy_
+From column: _RECORDS / EndDate_
+``` python
+return getValue("DisplayDate")
 ```
 
 
@@ -253,15 +319,15 @@ return getValue("ConstituentURI") + "/biography"
 ## Links
 | From | Property | To |
 |  --- | -------- | ---|
-| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300080102`|
 | `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
-| `crm:E39_Actor1` | `crm:P107i_is_current_or_former_member_of` | `crm:E74_Group1`|
+| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300080102`|
 | `crm:E39_Actor1` | `crm:P129i_is_subject_of` | `crm:E33_Linguistic_Object1`|
-| `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation1`|
-| `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation2`|
 | `crm:E39_Actor1` | `crm:P1_is_identified_by` | `crm:E42_Identifier1`|
 | `crm:E39_Actor1` | `crm:P92i_was_brought_into_existence_by` | `crm:E63_Beginning_of_Existence1`|
 | `crm:E39_Actor1` | `crm:P93i_was_taken_out_of_existence_by` | `crm:E64_End_of_Existence1`|
+| `crm:E39_Actor1` | `crm:P107i_is_current_or_former_member_of` | `crm:E74_Group1`|
+| `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation1`|
+| `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation2`|
 | `crm:E42_Identifier1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
 | `crm:E55_Type1` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404845`|
 | `crm:E55_Type2` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404662`|
