@@ -30,13 +30,10 @@ return getValue("Title")
 #### _TitleURI_
 From column: _RECORDS / ObjectURI_
 ``` python
-def cleanURI(prefix, value):
-    uri_value = value.lower().replace(' ', '_')
-    return UM.uri_from_fields(prefix + uri_value)
-prefix = getValue("ObjectURI") + "/"
+prefix = "thesauri/title/"
 titleType = getValue("TitleType")
-if titleType:
-    return cleanURI(prefix,titleType)
+if titleType and getValue("Title")!="Untitled":
+    return UM.uri_from_fields(prefix, getValue("Title"))
 else:
     return ""
 ```
@@ -44,7 +41,7 @@ else:
 #### _TitleIDURI_
 From column: _RECORDS / TitleID_
 ``` python
-return getValue("TitleURI") + "/id"
+return getValue("TitleURI") + "/id/" + getValue("TitleID")
 ```
 
 
