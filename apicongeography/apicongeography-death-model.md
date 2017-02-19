@@ -18,7 +18,7 @@ return "constituent/" + getValue("ConstituentID")
 #### _DeathEventURI_
 From column: _RECORDS / ConstituentURI_
 ``` python
-if getValue("Location"):
+if getValue("City"):
     return getValue("ConstituentURI") + "/death"
 else:
     return ""
