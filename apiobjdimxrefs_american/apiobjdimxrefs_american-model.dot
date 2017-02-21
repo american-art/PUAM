@@ -8,22 +8,22 @@ n2[style="filled",color="white",fillcolor="lightgray",label="E18_Physical_Thing1
 n3[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension1"];
 n4[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
 n5[style="filled",color="white",fillcolor="lightgray",label="E55_Type1"];
-n6[shape="plaintext",style="filled",fillcolor="gold",label="Dimension"];
-n7[shape="plaintext",style="filled",fillcolor="gold",label="DimUnit"];
-n8[shape="plaintext",style="filled",fillcolor="gold",label="DimensionType"];
-n9[shape="plaintext",style="filled",fillcolor="gold",label="DimensionURI"];
-n10[shape="plaintext",style="filled",fillcolor="gold",label="Element"];
-n11[shape="plaintext",style="filled",fillcolor="gold",label="DimensionTypeURI"];
-n12[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="DimUnit"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="DimensionTypeURI"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="DimensionURI"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="ElementURI"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="Dimension"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="DimensionType"];
 }
 n2 -> n3[color="brown",fontcolor="black",label="P43_has_dimension"]
 n4 -> n2[color="brown",fontcolor="black",label="P46_is_composed_of"]
 n3 -> n5[color="brown",fontcolor="black",label="P2_has_type"]
-n3 -> n6[color="brown",fontcolor="black",label="value"]
-n3 -> n7[color="brown",fontcolor="black",label="P91_has_unit"]
-n5 -> n8[color="brown",fontcolor="black",label="prefLabel"]
-n3 -> n9[color="brown",fontcolor="black",label="classLink"]
-n2 -> n10[color="brown",fontcolor="black",label="classLink"]
-n5 -> n11[color="brown",fontcolor="black",label="classLink"]
-n4 -> n12[color="brown",fontcolor="black",label="classLink"]
+n3 -> n6[color="brown",fontcolor="black",label="P91_has_unit"]
+n5 -> n7[color="brown",fontcolor="black",label="classLink"]
+n3 -> n8[color="brown",fontcolor="black",label="classLink"]
+n2 -> n9[color="brown",fontcolor="black",label="classLink"]
+n4 -> n10[color="brown",fontcolor="black",label="classLink"]
+n3 -> n11[color="brown",fontcolor="black",label="value"]
+n5 -> n12[color="brown",fontcolor="black",label="prefLabel"]
 }
