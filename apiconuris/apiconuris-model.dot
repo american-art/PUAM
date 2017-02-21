@@ -1,0 +1,23 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="apiconuris.json"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="E39_Actor1"];
+n3[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
+n4[style="filled",color="white",fillcolor="lightgray",label="Concept1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="AltIdURI"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="ConstituentURI"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="ViafID"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="UlanID"];
+n9[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/ulan"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="P1_is_identified_by"]
+n2 -> n4[color="brown",fontcolor="black",label="exactMatch"]
+n3 -> n5[color="brown",fontcolor="black",label="classLink"]
+n2 -> n6[color="brown",fontcolor="black",label="classLink"]
+n3 -> n7[color="brown",fontcolor="black",label="value"]
+n4 -> n8[color="brown",fontcolor="black",label="classLink"]
+n4 -> n9[color="brown",fontcolor="black",label="inScheme"]
+}
