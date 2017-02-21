@@ -26,7 +26,8 @@ return UM.uri_from_fields("thesauri/dimension/",getValue("DimensionType"))
 #### _ElementURI_
 From column: _RECORDS / Element_
 ``` python
-return UM.uri_from_fields("thesauri/element/",getValue("Element"))
+#return UM.uri_from_fields("thesauri/element/",getValue("Element"))
+return getValue("ObjectURI")+"/"+getValue("Element")
 ```
 
 
@@ -40,7 +41,7 @@ return UM.uri_from_fields("thesauri/element/",getValue("Element"))
 | _DimensionType_ | `skos:prefLabel` | `crm:E55_Type1`|
 | _DimensionTypeURI_ | `uri` | `crm:E55_Type1`|
 | _DimensionURI_ | `uri` | `crm:E54_Dimension1`|
-| _Element_ | `uri` | `crm:E18_Physical_Thing1`|
+| _ElementURI_ | `uri` | `crm:E18_Physical_Thing1`|
 | _ObjectURI_ | `uri` | `crm:E22_Man-Made_Object1`|
 
 
