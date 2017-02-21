@@ -1,0 +1,17 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="apiobjtermsxrefs_american.json"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
+n3[style="filled",color="white",fillcolor="lightgray",label="Thing1"];
+n4[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="TermURI"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="Term"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="P62_depicts"]
+n2 -> n4[color="brown",fontcolor="black",label="classLink"]
+n3 -> n5[color="brown",fontcolor="black",label="classLink"]
+n3 -> n6[color="brown",fontcolor="black",label="label"]
+}
