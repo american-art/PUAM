@@ -33,7 +33,7 @@ if getValue("URIType")=="VIAF":
 #### _AltIdURI_
 From column: _RECORDS / UlanID_
 ``` python
-if getValue("URIType")=="ULAN":
+if getValue("URIType")=="VIAF":
     return getValue("ConstituentURI")+"/alternate_id"
 ```
 
