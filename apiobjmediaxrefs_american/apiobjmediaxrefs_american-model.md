@@ -14,7 +14,7 @@ return "object/"+getValue("ObjectID")
 #### _ImageURI_
 From column: _RECORDS / Filename_
 ``` python
-return "artimage.princeton.edu/files/ProductionJpegs/"+getValue("Filename")
+return "http://artimage.princeton.edu/files/ProductionJpegs/"+getValue("Filename")
 ```
 
 
