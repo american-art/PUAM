@@ -6,10 +6,10 @@ subgraph cluster {
 label="model"
 n2[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
 n3[style="filled",color="white",fillcolor="lightgray",label="E38_Image1"];
-n4[shape="plaintext",style="filled",fillcolor="gold",label="ImageURI"];
-n5[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n4[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="ImageURI"];
 }
 n2 -> n3[color="brown",fontcolor="black",label="P138i_has_representation"]
-n3 -> n4[color="brown",fontcolor="black",label="classLink"]
-n2 -> n5[color="brown",fontcolor="black",label="classLink"]
+n2 -> n4[color="brown",fontcolor="black",label="classLink"]
+n3 -> n5[color="brown",fontcolor="black",label="classLink"]
 }
