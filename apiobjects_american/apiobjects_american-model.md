@@ -131,7 +131,7 @@ else:
 #### _OwnerURI_
 From column: _RECORDS / ObjectNumber_
 ``` python
-return "http://artmuseum.princeton.edu"
+return "http://data.americanartcollaborative.org/puam"
 ```
 
 #### _OwnerLabel_
