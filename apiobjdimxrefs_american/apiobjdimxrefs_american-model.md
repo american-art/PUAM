@@ -41,7 +41,7 @@ return UM.uri_from_fields("thesauri/measurement_unit/",getValue("DimUnit"))
 ## Semantic Types
 | Column | Property | Class |
 |  ----- | -------- | ----- |
-| _DimUnit_ | `uri` | `crm:E58_Measurement_Unit1`|
+| _DimUnit_ | `rdfs:label` | `crm:E58_Measurement_Unit1`|
 | _Dimension_ | `rdf:value` | `crm:E54_Dimension1`|
 | _DimensionType_ | `skos:prefLabel` | `crm:E55_Type1`|
 | _DimensionTypeURI_ | `uri` | `crm:E55_Type1`|
