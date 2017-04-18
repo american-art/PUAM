@@ -20,7 +20,9 @@ return "constituent/"+getValue("ConstituentID")
 From column: _RECORDS / URI_
 ``` python
 if getValue("URIType")=="ULAN":
-    return "vocab.getty.edu/ulan/"+getValue("URI")
+    return "http://vocab.getty.edu/ulan/"+getValue("URI")
+else:
+    return ""
 ```
 
 #### _ViafID_
@@ -54,4 +56,4 @@ if getValue("URIType")=="VIAF":
 |  --- | -------- | ---|
 | `crm:E39_Actor1` | `crm:P1_is_identified_by` | `crm:E42_Identifier1`|
 | `crm:E39_Actor1` | `skos:exactMatch` | `skos:Concept1`|
-| `skos:Concept1` | `skos:inScheme` | `xsd:http://vocab.getty.edu/ulan`|
+| `skos:Concept1` | `skos:inScheme` | `http://vocab.getty.edu/ulan`|
