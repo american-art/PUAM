@@ -14,7 +14,7 @@ return "object/" + getValue("ObjectID")
 #### _TitleURI_
 From column: _RECORDS / TitleType_
 ``` python
-return getValue("ObjectURI") + "/unknown_title_type"
+return getValue("ObjectURI")+"/title/"+getValue("TitleID")
 ```
 
 
