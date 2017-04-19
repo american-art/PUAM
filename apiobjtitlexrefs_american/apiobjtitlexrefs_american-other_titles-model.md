@@ -3,11 +3,6 @@
 ## Add Column
 
 ## Add Node/Literal
-#### Literal Node: `http://vocab.getty.edu/aat/300404012`
-Literal Type: ``
-<br/>Language: ``
-<br/>isUri: `true`
-
 
 ## PyTransforms
 #### _ObjectURI_
@@ -25,7 +20,7 @@ def cleanURI(prefix, value):
 titleType = getValue("TitleType")
 prefix = getValue("ObjectURI") + "/"
 if titleType:
-    return cleanURI(prefix, titleType)
+    return getValue("ObjectURI")+"/title/"+getValue("TitleID")
 else:
     return ""
 ```
