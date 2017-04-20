@@ -32,7 +32,7 @@ From column: _RECORDS / ObjectURI_
 ``` python
 prefix = "thesauri/title/"
 titleType = getValue("TitleType")
-if titleType and getValue("Title")!="Untitled":
+if titleType:
     return getValue("ObjectURI")+"/title/"+getValue("TitleID")
 else:
     return ""
@@ -42,8 +42,8 @@ else:
 From column: _RECORDS / TitleID_
 ``` python
 titleType = getValue("TitleType")
-if titleType and getValue("Title")!="Untitled":
-    return getValue("TitleURI") + "/id/" + getValue("TitleID")
+if titleType:
+    return getValue("TitleURI") + "/id"
 else:
     return ""
 ```
