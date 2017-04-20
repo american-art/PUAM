@@ -14,7 +14,7 @@ return "constituent/" + getValue("ConstituentID")
 #### _BirthEventURI_
 From column: _RECORDS / ConstituentURI_
 ``` python
-if getValue("City"):
+if getValue("Location"):
     return getValue("ConstituentURI") + "/birth"
 else:
     return ""
@@ -23,13 +23,8 @@ else:
 #### _BirthPlaceURI_
 From column: _RECORDS / BirthEventURI_
 ``` python
-def cleanURI(prefix, value):
-    uri_value = value.lower().replace(' ', '_')
-    return UM.uri_from_fields(prefix + uri_value)
 if getValue("Location"):
-    prefix = getValue("BirthEventURI") + "/"
-    value = getValue("ConGeoCode")
-    return cleanURI(prefix, value)
+    return UM.uri_from_fields("thesauiri/location/",getValue("Location"))
 else:
     return ""
 ```
@@ -37,10 +32,12 @@ else:
 #### _Location_
 From column: _RECORDS / City_
 ``` python
-if getValue("City"):
-    place = getValue("City")
-    if place and getValue("Country"):
-        place = place+", "+getValue("Country")
+if getValue("Country"):
+    place = getValue("Country")
+    if getValue("State"):
+        place = getValue("State") + ", " + place
+    if getValue("City"):
+        place = getValue("City") + ", " + place
     return place
 else:
     return ""
