@@ -77,7 +77,7 @@ return getValue("DisplayName")
 #### _AppellationURI_
 From column: _RECORDS / AppellationValue_
 ``` python
-return getValue("ConstituentURI") + "/appellation"
+return getValue("ConstituentURI") + "/name"
 ```
 
 #### _AlphaSortURI_
@@ -90,7 +90,7 @@ return getValue("ConstituentURI") + "/alpha_sort"
 From column: _RECORDS / NameTitle_
 ``` python
 if getValue("NameTitle"):
-    return getValue("AppellationURI") + "/name_title"
+    return getValue("ConstituentURI") + "/name_title"
 else:
     ""
 ```
@@ -99,7 +99,7 @@ else:
 From column: _RECORDS / NameTitleURI_
 ``` python
 if getValue("NameTitle"):
-    return getValue("NameTitleURI") + "/type"
+    return "thesauri/name_type/name_title"
 else:
     ""
 ```
@@ -108,7 +108,7 @@ else:
 From column: _RECORDS / Suffix_
 ``` python
 if getValue("Suffix"):
-    return getValue("AppellationURI") + "/suffix"
+    return getValue("ConstituentURI") + "/suffix"
 else:
     return ""
 ```
@@ -117,7 +117,7 @@ else:
 From column: _RECORDS / SuffixURI_
 ``` python
 if getValue("Suffix"):
-    return getValue("SuffixURI") + "/type"
+    return "thesauri/name_type/suffix"
 else:
     return ""
 ```
@@ -126,7 +126,7 @@ else:
 From column: _RECORDS / FirstName_
 ``` python
 if getValue("FirstName"):
-    return getValue("AppellationURI") + "/given_name"
+    return getValue("ConstituentURI") + "/given_name"
 else:
     ""
 ```
@@ -135,7 +135,7 @@ else:
 From column: _RECORDS / GivenNameURI_
 ``` python
 if getValue("FirstName"):
-    return getValue("GivenNameURI") + "/type"
+    return "thesauri/name_type/given_name"
 else:
     return ""
 ```
@@ -144,7 +144,7 @@ else:
 From column: _RECORDS / LastName_
 ``` python
 if getValue("LastName"):
-    return getValue("AppellationURI") + "/family_name"
+    return getValue("ConstituentURI") + "/family_name"
 else:
     return ""
 ```
@@ -153,7 +153,7 @@ else:
 From column: _RECORDS / FamilyNameURI_
 ``` python
 if getValue("LastName"):
-    return getValue("FamilyNameURI") + "/type"
+    return "thesauri/name_type/family_name"
 else:
     return ""
 ```
@@ -162,7 +162,7 @@ else:
 From column: _RECORDS / MiddleName_
 ``` python
 if getValue("MiddleName"):
-    return getValue("AppellationURI") + "/middle_name"
+    return getValue("ConstituentURI") + "/middle_name"
 else:
     return ""
 ```
@@ -171,7 +171,7 @@ else:
 From column: _RECORDS / MiddleNameURI_
 ``` python
 if getValue("MiddleName"):
-    return getValue("MiddleNameURI") + "/type"
+    return "thesauri/name_type/middle_name"
 else:
     return ""
 ```
@@ -180,7 +180,7 @@ else:
 From column: _RECORDS / BeginDate_
 ``` python
 if getValue("BeginDate") and getValue("BeginDate")!="0":
-    return getValue("BeginDate")
+    return getValue("BeginDate")+"-01-01"
 else:
     return ""
 ```
@@ -189,7 +189,7 @@ else:
 From column: _RECORDS / EarliestBirthdate_
 ``` python
 if getValue("BeginDate") and getValue("BeginDate")!="0":
-    return getValue("BeginDate")
+    return getValue("BeginDate")+"-12-31"
 else:
     return ""
 ```
@@ -207,7 +207,7 @@ else:
 From column: _RECORDS / BirthURI_
 ``` python
 if getValue("BeginDate") and getValue("BeginDate")!="0":
-    return getValue("BirthURI") + "/time"
+    return getValue("BirthURI") + "/date"
 else:
     return ""
 ```
@@ -216,7 +216,7 @@ else:
 From column: _RECORDS / EndDate_
 ``` python
 if getValue("EndDate") and getValue("EndDate")!="0":
-    return getValue("EndDate")
+    return getValue("EndDate")+"-01-01"
 else:
     return ""
 ```
@@ -225,7 +225,7 @@ else:
 From column: _RECORDS / EarliestDeathdate_
 ``` python
 if getValue("EndDate") and getValue("EndDate")!="0":
-    return getValue("EndDate")
+    return getValue("EndDate")+"-12-31"
 else:
     return ""
 ```
@@ -272,6 +272,12 @@ From column: _RECORDS / EndDate_
 return getValue("DisplayDate")
 ```
 
+#### _NameLabel_
+From column: _RECORDS / AppellationValue_
+``` python
+return getValue("DisplayName")
+```
+
 
 ## Selections
 
@@ -308,6 +314,7 @@ return getValue("DisplayDate")
 | _MiddleName_ | `rdf:value` | `crm:E82_Actor_Appellation7`|
 | _MiddleNameTypeURI_ | `uri` | `crm:E55_Type5`|
 | _MiddleNameURI_ | `uri` | `crm:E82_Actor_Appellation7`|
+| _NameLabel_ | `rdfs:label` | `crm:E82_Actor_Appellation1`|
 | _NameTitle_ | `rdf:value` | `crm:E82_Actor_Appellation3`|
 | _NameTitleURI_ | `uri` | `crm:E82_Actor_Appellation3`|
 | _NameTitle_TypeURI_ | `uri` | `crm:E55_Type1`|
