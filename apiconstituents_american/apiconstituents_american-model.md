@@ -278,6 +278,15 @@ From column: _RECORDS / AppellationValue_
 return getValue("DisplayName")
 ```
 
+#### _NationalityCleaned_
+From column: _RECORDS / Nationality_
+``` python
+if getValue("Nationality"):
+    return getValue("Nationality").strip().lower()
+else:
+    return ""
+```
+
 
 ## Selections
 
@@ -318,7 +327,7 @@ return getValue("DisplayName")
 | _NameTitle_ | `rdf:value` | `crm:E82_Actor_Appellation3`|
 | _NameTitleURI_ | `uri` | `crm:E82_Actor_Appellation3`|
 | _NameTitle_TypeURI_ | `uri` | `crm:E55_Type1`|
-| _Nationality_ | `rdfs:label` | `crm:E74_Group1`|
+| _NationalityCleaned_ | `rdfs:label` | `crm:E74_Group1`|
 | _NationalityURI_ | `uri` | `crm:E74_Group1`|
 | _Suffix_ | `rdf:value` | `crm:E82_Actor_Appellation4`|
 | _SuffixTypeURI_ | `uri` | `crm:E55_Type2`|
