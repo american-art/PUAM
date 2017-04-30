@@ -4,42 +4,42 @@
     "description": null,
     "sourceColumns": [
         {
-            "id": "HN128423",
-            "hNodeId": "HN128423",
+            "id": "HN96200",
+            "hNodeId": "HN96200",
+            "columnName": "DeathPlaceURI"
+        },
+        {
+            "id": "HN92935",
+            "hNodeId": "HN92935",
             "columnName": "Location"
         },
         {
-            "id": "HN120551",
-            "hNodeId": "HN120551",
+            "id": "HN88036",
+            "hNodeId": "HN88036",
             "columnName": "ConstituentURI"
         },
         {
-            "id": "HN123173",
-            "hNodeId": "HN123173",
+            "id": "HN94569",
+            "hNodeId": "HN94569",
             "columnName": "DeathEventURI"
-        },
-        {
-            "id": "HN125795",
-            "hNodeId": "HN125795",
-            "columnName": "DeathPlaceURI"
         }
     ],
     "mappingToSourceColumns": [
         {
-            "id": "HN128423",
-            "sourceColumnId": "HN128423"
+            "id": "HN88036",
+            "sourceColumnId": "HN88036"
         },
         {
-            "id": "HN120551",
-            "sourceColumnId": "HN120551"
+            "id": "HN92935",
+            "sourceColumnId": "HN92935"
         },
         {
-            "id": "HN123173",
-            "sourceColumnId": "HN123173"
+            "id": "HN96200",
+            "sourceColumnId": "HN96200"
         },
         {
-            "id": "HN125795",
-            "sourceColumnId": "HN125795"
+            "id": "HN94569",
+            "sourceColumnId": "HN94569"
         }
     ],
     "graph": {
@@ -72,19 +72,74 @@
                 "modelIds": null
             },
             {
-                "id": "HN128423",
+                "id": "HN96200",
                 "label": {
-                    "uri": "HN128423",
+                    "uri": "HN96200",
                     "rdfsLabel": null
                 },
                 "type": "ColumnNode",
-                "hNodeId": "HN128423",
+                "hNodeId": "HN96200",
+                "columnName": "DeathPlaceURI",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN96200",
+                        "domain": {
+                            "uri": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN96200",
+                        "domain": {
+                            "uri": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN92935",
+                "label": {
+                    "uri": "HN92935",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN92935",
                 "columnName": "Location",
                 "rdfLiteralType": null,
                 "language": "",
                 "userSemanticTypes": [
                     {
-                        "hNodeId": "HN128423",
+                        "hNodeId": "HN92935",
+                        "domain": {
+                            "uri": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN92935",
                         "domain": {
                             "uri": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
                             "rdfsLabel": null
@@ -101,19 +156,32 @@
                 "modelIds": null
             },
             {
-                "id": "HN120551",
+                "id": "HN88036",
                 "label": {
-                    "uri": "HN120551",
+                    "uri": "HN88036",
                     "rdfsLabel": null
                 },
                 "type": "ColumnNode",
-                "hNodeId": "HN120551",
+                "hNodeId": "HN88036",
                 "columnName": "ConstituentURI",
                 "rdfLiteralType": null,
                 "language": "",
                 "userSemanticTypes": [
                     {
-                        "hNodeId": "HN120551",
+                        "hNodeId": "HN88036",
+                        "domain": {
+                            "uri": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN88036",
                         "domain": {
                             "uri": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
                             "rdfsLabel": null
@@ -130,19 +198,19 @@
                 "modelIds": null
             },
             {
-                "id": "HN123173",
+                "id": "HN94569",
                 "label": {
-                    "uri": "HN123173",
+                    "uri": "HN94569",
                     "rdfsLabel": null
                 },
                 "type": "ColumnNode",
-                "hNodeId": "HN123173",
+                "hNodeId": "HN94569",
                 "columnName": "DeathEventURI",
                 "rdfLiteralType": null,
                 "language": "",
                 "userSemanticTypes": [
                     {
-                        "hNodeId": "HN123173",
+                        "hNodeId": "HN94569",
                         "domain": {
                             "uri": "http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence",
                             "rdfsLabel": null
@@ -153,27 +221,11 @@
                         },
                         "origin": "User",
                         "confidenceScore": 1.0
-                    }
-                ],
-                "learnedSemanticTypes": null,
-                "modelIds": null
-            },
-            {
-                "id": "HN125795",
-                "label": {
-                    "uri": "HN125795",
-                    "rdfsLabel": null
-                },
-                "type": "ColumnNode",
-                "hNodeId": "HN125795",
-                "columnName": "DeathPlaceURI",
-                "rdfLiteralType": null,
-                "language": "",
-                "userSemanticTypes": [
+                    },
                     {
-                        "hNodeId": "HN125795",
+                        "hNodeId": "HN94569",
                         "domain": {
-                            "uri": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                            "uri": "http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence",
                             "rdfsLabel": null
                         },
                         "type": {
@@ -216,7 +268,19 @@
                 "modelIds": null
             },
             {
-                "id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place1---http://www.w3.org/2000/01/rdf-schema#label---HN128423",
+                "id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place1---http://isi.edu/integration/karma/dev#classLink---HN96200",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            },
+            {
+                "id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place1---http://www.w3.org/2000/01/rdf-schema#label---HN92935",
                 "weight": 0.01,
                 "type": "DataPropertyLink",
                 "label": {
@@ -228,7 +292,7 @@
                 "modelIds": null
             },
             {
-                "id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor1---http://isi.edu/integration/karma/dev#classLink---HN120551",
+                "id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor1---http://isi.edu/integration/karma/dev#classLink---HN88036",
                 "weight": 0.01,
                 "type": "ClassInstanceLink",
                 "label": {
@@ -240,19 +304,7 @@
                 "modelIds": null
             },
             {
-                "id": "http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence1---http://isi.edu/integration/karma/dev#classLink---HN123173",
-                "weight": 0.01,
-                "type": "ClassInstanceLink",
-                "label": {
-                    "uri": "http://isi.edu/integration/karma/dev#classLink",
-                    "rdfsLabel": null
-                },
-                "status": "ForcedByUser",
-                "keyInfo": "UriOfInstance",
-                "modelIds": null
-            },
-            {
-                "id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place1---http://isi.edu/integration/karma/dev#classLink---HN125795",
+                "id": "http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence1---http://isi.edu/integration/karma/dev#classLink---HN94569",
                 "weight": 0.01,
                 "type": "ClassInstanceLink",
                 "label": {
