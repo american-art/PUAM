@@ -26,6 +26,15 @@ From column: _RECORDS / ConstituentURI_
 return getValue("ObjectURI")+"/production"
 ```
 
+#### _SubjectURI_
+From column: _RECORDS / Role_
+``` python
+if getValue("Role")=="Depicted":
+    return "constituent/"+getValue("ConstituentID")
+else:
+    return ""
+```
+
 
 ## Selections
 
@@ -35,6 +44,7 @@ return getValue("ObjectURI")+"/production"
 | _ConstituentURI_ | `uri` | `crm:E39_Actor1`|
 | _ObjectURI_ | `uri` | `crm:E22_Man-Made_Object1`|
 | _ProductionURI_ | `uri` | `crm:E12_Production1`|
+| _SubjectURI_ | `uri` | `crm:E39_Actor2`|
 
 
 ## Links
@@ -42,3 +52,4 @@ return getValue("ObjectURI")+"/production"
 |  --- | -------- | ---|
 | `crm:E12_Production1` | `crm:P14_carried_out_by` | `crm:E39_Actor1`|
 | `crm:E22_Man-Made_Object1` | `crm:P108i_was_produced_by` | `crm:E12_Production1`|
+| `crm:E22_Man-Made_Object1` | `crm:P62_depicts` | `crm:E39_Actor2`|
