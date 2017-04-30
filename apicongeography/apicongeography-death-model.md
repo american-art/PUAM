@@ -11,7 +11,7 @@ From column: _RECORDS / ConstituentID_
 return "constituent/" + getValue("ConstituentID")
 ```
 
-#### _DeathEventURI_
+#### _NIU_
 From column: _RECORDS / ConstituentURI_
 ``` python
 if getValue("Location"):
@@ -20,8 +20,8 @@ else:
     return ""
 ```
 
-#### _DeathPlaceURI_
-From column: _RECORDS / DeathEventURI_
+#### _NIU1_
+From column: _RECORDS / NIU_
 ``` python
 if getValue("Location"):
     return UM.uri_from_fields("thesauri/location/",getValue("Location"))
@@ -39,6 +39,24 @@ if getValue("Country"):
     if getValue("City"):
         place = getValue("City") + " ," + place
     return place
+else:
+    return ""
+```
+
+#### _DeathEventURI_
+From column: _RECORDS / ConstituentURI_
+``` python
+if getValue("Location"):
+    return getValue("ConstituentURI") + "/death"
+else:
+    return ""
+```
+
+#### _DeathPlaceURI_
+From column: _RECORDS / DeathEventURI_
+``` python
+if getValue("Location"):
+    return UM.uri_from_fields("thesauri/location/",getValue("Location"))
 else:
     return ""
 ```
