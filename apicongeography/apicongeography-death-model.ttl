@@ -12,12 +12,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1be5740umx1 a km-dev:R2RMLMapping ;
+_:node1bf073rt7x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "apicongeography.json" ;
-	km-dev:modelPublicationTime "1492676379606"^^xsd:long ;
+	km-dev:modelPublicationTime "1493582344103"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"State\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"City\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ConstituentID\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"Country\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ConstituentURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ConGeoCode\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"Location\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"DeathEventURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"DeathPlaceURI\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ConstituentID\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"State\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"City\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"Country\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"RECORDS\"},{\"columnName\":\"DeathPlaceURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"Location\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ConstituentURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"NIU1\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"DeathEventURI\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"ConGeoCode\"}],[{\"columnName\":\"RECORDS\"},{\"columnName\":\"NIU\"}]]" ;
 	km-dev:hasModelLabel "apicongeography-death" ;
 	km-dev:hasBaseURI "http://data.americanartcollaborative.org/puam/" ;
 	km-dev:hasWorksheetHistory """[
@@ -100,7 +100,7 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"newColumnName\",
-                \"value\": \"DeathEventURI\",
+                \"value\": \"NIU\",
                 \"type\": \"other\"
             },
             {
@@ -125,7 +125,7 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathEventURI\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"NIU\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -139,7 +139,7 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
                 \"name\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"DeathEventURI\"}
+                    {\"columnName\": \"NIU\"}
                 ],
                 \"type\": \"hNodeId\"
             },
@@ -155,7 +155,7 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"newColumnName\",
-                \"value\": \"DeathPlaceURI\",
+                \"value\": \"NIU1\",
                 \"type\": \"other\"
             },
             {
@@ -180,7 +180,7 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathPlaceURI\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"NIU1\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -593,6 +593,116 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
         \"commandName\": \"SetWorksheetPropertiesCommand\"
     },
     {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"RECORDS\"},
+                    {\"columnName\": \"ConstituentURI\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"DeathEventURI\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"if getValue(\\\"Location\\\"):\\n    return getValue(\\\"ConstituentURI\\\") + \\\"/death\\\"\\nelse:\\n    return \\\"\\\"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"ConstituentURI\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"Location\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathEventURI\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"RECORDS\"},
+                    {\"columnName\": \"DeathEventURI\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"DeathPlaceURI\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"if getValue(\\\"Location\\\"):\\n    return UM.uri_from_fields(\\\"thesauri/location/\\\",getValue(\\\"Location\\\"))\\nelse:\\n    return \\\"\\\"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"Location\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathPlaceURI\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
         \"tags\": [\"Selection\"],
         \"model\": \"new\",
         \"inputParameters\": [
@@ -726,158 +836,6 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
                 \"name\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"DeathPlaceURI\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyName\",
-                \"value\": \"isUriOfClass\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyUri\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyId\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place1\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"crm:E53_Place1\",
-                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place1\",
-                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathPlaceURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathPlaceURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetMetaPropertyCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"RECORDS\"},
-                    {\"columnName\": \"DeathEventURI\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyName\",
-                \"value\": \"isUriOfClass\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyUri\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyId\",
-                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence1\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"crm:E64_End_of_Existence1\",
-                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence1\",
-                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathEventURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathEventURI\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetMetaPropertyCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"RECORDS\"},
                     {\"columnName\": \"Location\"}
                 ],
                 \"type\": \"hNodeId\"
@@ -930,6 +888,160 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"RECORDS\"},
+                    {\"columnName\": \"DeathEventURI\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"DomainLabel\": \"crm:E64_End_of_Existence1\",
+                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence1\",
+                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathEventURI\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathEventURI\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"RECORDS\"},
+                    {\"columnName\": \"DeathPlaceURI\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"DomainLabel\": \"crm:E53_Place1\",
+                    \"DomainId\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place1\",
+                    \"DomainUri\": \"http://www.cidoc-crm.org/cidoc-crm/E53_Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathPlaceURI\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RECORDS\\\"},{\\\"columnName\\\":\\\"DeathPlaceURI\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
     },
     {
         \"tags\": [\"Modeling\"],
@@ -1036,123 +1148,123 @@ _:node1be5740umx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_05287a5e-4cee-449d-bdf2-54c915325a9f a rr:TriplesMap .
+km-dev:TriplesMap_dce02a3e-8b58-446f-940c-c286d93bf78d a rr:TriplesMap .
 
-_:node1be5740umx1 km-dev:hasTriplesMap km-dev:TriplesMap_05287a5e-4cee-449d-bdf2-54c915325a9f .
+_:node1bf073rt7x1 km-dev:hasTriplesMap km-dev:TriplesMap_dce02a3e-8b58-446f-940c-c286d93bf78d .
 
-km-dev:TriplesMap_05287a5e-4cee-449d-bdf2-54c915325a9f km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:TriplesMap_dce02a3e-8b58-446f-940c-c286d93bf78d km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx2 rr:tableName "apicongeography.json" ;
+_:node1bf073rt7x2 rr:tableName "apicongeography.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasLogicalTable _:node1be5740umx2 .
+_:node1bf073rt7x1 km-dev:hasLogicalTable _:node1bf073rt7x2 .
 
-km-dev:TriplesMap_05287a5e-4cee-449d-bdf2-54c915325a9f rr:logicalTable _:node1be5740umx2 ;
-	rr:subjectMap _:node1be5740umx3 .
+km-dev:TriplesMap_dce02a3e-8b58-446f-940c-c286d93bf78d rr:logicalTable _:node1bf073rt7x2 ;
+	rr:subjectMap _:node1bf073rt7x3 .
 
-_:node1be5740umx1 km-dev:hasSubjectMap _:node1be5740umx3 .
+_:node1bf073rt7x1 km-dev:hasSubjectMap _:node1bf073rt7x3 .
 
-_:node1be5740umx3 km-dev:isPartOfMapping _:node1be5740umx1 ;
+_:node1bf073rt7x3 km-dev:isPartOfMapping _:node1bf073rt7x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E39_Actor1" ;
 	rr:class crm:E39_Actor ;
 	rr:template "constituent/{[\"RECORDS\",\"ConstituentID\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_e34c43e6-4781-4aee-9043-801da8134b51 rr:predicate crm:P93i_was_taken_out_of_existence_by .
+km-dev:PredicateObjectMap_f4192f84-2a8d-4d5d-a562-a9135ad10347 rr:predicate crm:P93i_was_taken_out_of_existence_by .
 
-km-dev:RefObjectMap_f4868711-354d-4d49-bfb6-3247ad2b92df a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_2542bc4b-85f5-42ce-b68c-fc7c7170f371 ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:RefObjectMap_60580e17-008c-48b6-9feb-06cd71a20581 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2e5f6b0e-7480-4e27-9c69-d825e8d727d1 ;
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasObjectMap km-dev:RefObjectMap_f4868711-354d-4d49-bfb6-3247ad2b92df .
+_:node1bf073rt7x1 km-dev:hasObjectMap km-dev:RefObjectMap_60580e17-008c-48b6-9feb-06cd71a20581 .
 
-km-dev:PredicateObjectMap_e34c43e6-4781-4aee-9043-801da8134b51 rr:objectMap km-dev:RefObjectMap_f4868711-354d-4d49-bfb6-3247ad2b92df .
+km-dev:PredicateObjectMap_f4192f84-2a8d-4d5d-a562-a9135ad10347 rr:objectMap km-dev:RefObjectMap_60580e17-008c-48b6-9feb-06cd71a20581 .
 
-km-dev:TriplesMap_05287a5e-4cee-449d-bdf2-54c915325a9f rr:predicateObjectMap km-dev:PredicateObjectMap_e34c43e6-4781-4aee-9043-801da8134b51 .
+km-dev:TriplesMap_dce02a3e-8b58-446f-940c-c286d93bf78d rr:predicateObjectMap km-dev:PredicateObjectMap_f4192f84-2a8d-4d5d-a562-a9135ad10347 .
 
-km-dev:PredicateObjectMap_e34c43e6-4781-4aee-9043-801da8134b51 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:PredicateObjectMap_f4192f84-2a8d-4d5d-a562-a9135ad10347 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e34c43e6-4781-4aee-9043-801da8134b51 .
+_:node1bf073rt7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f4192f84-2a8d-4d5d-a562-a9135ad10347 .
 
-km-dev:TriplesMap_2542bc4b-85f5-42ce-b68c-fc7c7170f371 a rr:TriplesMap .
+km-dev:TriplesMap_2e5f6b0e-7480-4e27-9c69-d825e8d727d1 a rr:TriplesMap .
 
-_:node1be5740umx1 km-dev:hasTriplesMap km-dev:TriplesMap_2542bc4b-85f5-42ce-b68c-fc7c7170f371 .
+_:node1bf073rt7x1 km-dev:hasTriplesMap km-dev:TriplesMap_2e5f6b0e-7480-4e27-9c69-d825e8d727d1 .
 
-km-dev:TriplesMap_2542bc4b-85f5-42ce-b68c-fc7c7170f371 km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:TriplesMap_2e5f6b0e-7480-4e27-9c69-d825e8d727d1 km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx4 rr:tableName "apicongeography.json" ;
+_:node1bf073rt7x4 rr:tableName "apicongeography.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasLogicalTable _:node1be5740umx4 .
+_:node1bf073rt7x1 km-dev:hasLogicalTable _:node1bf073rt7x4 .
 
-km-dev:TriplesMap_2542bc4b-85f5-42ce-b68c-fc7c7170f371 rr:logicalTable _:node1be5740umx4 ;
-	rr:subjectMap _:node1be5740umx5 .
+km-dev:TriplesMap_2e5f6b0e-7480-4e27-9c69-d825e8d727d1 rr:logicalTable _:node1bf073rt7x4 ;
+	rr:subjectMap _:node1bf073rt7x5 .
 
-_:node1be5740umx1 km-dev:hasSubjectMap _:node1be5740umx5 .
+_:node1bf073rt7x1 km-dev:hasSubjectMap _:node1bf073rt7x5 .
 
-_:node1be5740umx5 km-dev:isPartOfMapping _:node1be5740umx1 ;
+_:node1bf073rt7x5 km-dev:isPartOfMapping _:node1bf073rt7x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence1" ;
 	rr:class crm:E64_End_of_Existence ;
 	rr:template "{[\"RECORDS\",\"DeathEventURI\"]}" .
 
-km-dev:PredicateObjectMap_8ad399e6-1799-4a58-8f6e-45d788b253fa rr:predicate crm:P7_took_place_at .
+km-dev:PredicateObjectMap_db23ee7b-6b66-48a2-aa59-09a670d2df01 rr:predicate crm:P7_took_place_at .
 
-km-dev:RefObjectMap_ec7e746d-e070-4a8a-a915-aebf7cd7275c a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_0bd37702-2d28-4870-bef7-10c382fab463 ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:RefObjectMap_1290f457-b922-4d9e-b069-331f17dbf725 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_746fb2c9-67a2-4c1f-a4e3-cd238d2b3d4f ;
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasObjectMap km-dev:RefObjectMap_ec7e746d-e070-4a8a-a915-aebf7cd7275c .
+_:node1bf073rt7x1 km-dev:hasObjectMap km-dev:RefObjectMap_1290f457-b922-4d9e-b069-331f17dbf725 .
 
-km-dev:PredicateObjectMap_8ad399e6-1799-4a58-8f6e-45d788b253fa rr:objectMap km-dev:RefObjectMap_ec7e746d-e070-4a8a-a915-aebf7cd7275c .
+km-dev:PredicateObjectMap_db23ee7b-6b66-48a2-aa59-09a670d2df01 rr:objectMap km-dev:RefObjectMap_1290f457-b922-4d9e-b069-331f17dbf725 .
 
-km-dev:TriplesMap_2542bc4b-85f5-42ce-b68c-fc7c7170f371 rr:predicateObjectMap km-dev:PredicateObjectMap_8ad399e6-1799-4a58-8f6e-45d788b253fa .
+km-dev:TriplesMap_2e5f6b0e-7480-4e27-9c69-d825e8d727d1 rr:predicateObjectMap km-dev:PredicateObjectMap_db23ee7b-6b66-48a2-aa59-09a670d2df01 .
 
-km-dev:PredicateObjectMap_8ad399e6-1799-4a58-8f6e-45d788b253fa a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:PredicateObjectMap_db23ee7b-6b66-48a2-aa59-09a670d2df01 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8ad399e6-1799-4a58-8f6e-45d788b253fa .
+_:node1bf073rt7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_db23ee7b-6b66-48a2-aa59-09a670d2df01 .
 
-km-dev:TriplesMap_0bd37702-2d28-4870-bef7-10c382fab463 a rr:TriplesMap .
+km-dev:TriplesMap_746fb2c9-67a2-4c1f-a4e3-cd238d2b3d4f a rr:TriplesMap .
 
-_:node1be5740umx1 km-dev:hasTriplesMap km-dev:TriplesMap_0bd37702-2d28-4870-bef7-10c382fab463 .
+_:node1bf073rt7x1 km-dev:hasTriplesMap km-dev:TriplesMap_746fb2c9-67a2-4c1f-a4e3-cd238d2b3d4f .
 
-km-dev:TriplesMap_0bd37702-2d28-4870-bef7-10c382fab463 km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:TriplesMap_746fb2c9-67a2-4c1f-a4e3-cd238d2b3d4f km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx6 rr:tableName "apicongeography.json" ;
+_:node1bf073rt7x6 rr:tableName "apicongeography.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasLogicalTable _:node1be5740umx6 .
+_:node1bf073rt7x1 km-dev:hasLogicalTable _:node1bf073rt7x6 .
 
-km-dev:TriplesMap_0bd37702-2d28-4870-bef7-10c382fab463 rr:logicalTable _:node1be5740umx6 ;
-	rr:subjectMap _:node1be5740umx7 .
+km-dev:TriplesMap_746fb2c9-67a2-4c1f-a4e3-cd238d2b3d4f rr:logicalTable _:node1bf073rt7x6 ;
+	rr:subjectMap _:node1bf073rt7x7 .
 
-_:node1be5740umx1 km-dev:hasSubjectMap _:node1be5740umx7 .
+_:node1bf073rt7x1 km-dev:hasSubjectMap _:node1bf073rt7x7 .
 
-_:node1be5740umx7 km-dev:isPartOfMapping _:node1be5740umx1 ;
+_:node1bf073rt7x7 km-dev:isPartOfMapping _:node1bf073rt7x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.cidoc-crm.org/cidoc-crm/E53_Place1" ;
 	rr:class crm:E53_Place ;
 	rr:template "{[\"RECORDS\",\"DeathPlaceURI\"]}" .
 
-km-dev:PredicateObjectMap_07c69a05-a8ee-47a5-9fb2-693056681e5a rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_286e9100-da79-47fe-b9e3-f936f6ecf9b0 rr:predicate rdfs:label .
 
-_:node1be5740umx8 rr:column "[\"RECORDS\",\"Location\"]" ;
+_:node1bf073rt7x8 rr:column "[\"RECORDS\",\"Location\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasObjectMap _:node1be5740umx8 .
+_:node1bf073rt7x1 km-dev:hasObjectMap _:node1bf073rt7x8 .
 
-km-dev:PredicateObjectMap_07c69a05-a8ee-47a5-9fb2-693056681e5a rr:objectMap _:node1be5740umx8 .
+km-dev:PredicateObjectMap_286e9100-da79-47fe-b9e3-f936f6ecf9b0 rr:objectMap _:node1bf073rt7x8 .
 
-km-dev:TriplesMap_0bd37702-2d28-4870-bef7-10c382fab463 rr:predicateObjectMap km-dev:PredicateObjectMap_07c69a05-a8ee-47a5-9fb2-693056681e5a .
+km-dev:TriplesMap_746fb2c9-67a2-4c1f-a4e3-cd238d2b3d4f rr:predicateObjectMap km-dev:PredicateObjectMap_286e9100-da79-47fe-b9e3-f936f6ecf9b0 .
 
-km-dev:PredicateObjectMap_07c69a05-a8ee-47a5-9fb2-693056681e5a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1be5740umx1 .
+km-dev:PredicateObjectMap_286e9100-da79-47fe-b9e3-f936f6ecf9b0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1bf073rt7x1 .
 
-_:node1be5740umx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_07c69a05-a8ee-47a5-9fb2-693056681e5a .
+_:node1bf073rt7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_286e9100-da79-47fe-b9e3-f936f6ecf9b0 .
