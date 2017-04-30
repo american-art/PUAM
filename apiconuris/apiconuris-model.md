@@ -20,7 +20,10 @@ return "constituent/"+getValue("ConstituentID")
 From column: _RECORDS / URI_
 ``` python
 if getValue("URIType")=="ULAN":
-    return "http://vocab.getty.edu/ulan/"+getValue("URI")
+    if "http://vocab.getty.edu/ulan/" in getValue("URI"):
+        return getValue("URI")
+    else:
+        return "http://vocab.getty.edu/ulan/"+getValue("URI")
 else:
     return ""
 ```
