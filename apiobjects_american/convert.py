@@ -8,5 +8,6 @@ with codecs.open(input_file_path, 'r') as input:
     with codecs.open(output_file_path, 'w') as output:
         data = json.loads(input.read())
 	for obj in data['RECORDS']:
+            obj = {'RECORDS': [obj]}
             output.write(json.dumps(obj) + '\n')
 
