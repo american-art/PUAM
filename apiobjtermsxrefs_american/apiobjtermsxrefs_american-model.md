@@ -99,8 +99,8 @@ else:
 | _CultureTerm_ | `rdfs:label` | `crm:E55_Type1`|
 | _CultureURI_ | `uri` | `crm:E55_Type1`|
 | _ObjectURI_ | `uri` | `crm:E22_Man-Made_Object1`|
-| _Term_ | `rdfs:label` | `owl:Thing1`|
-| _TermURI_ | `uri` | `owl:Thing1`|
+| _Term_ | `rdfs:label` | `crm:E1_CRM_Entity1`|
+| _TermURI_ | `uri` | `crm:E1_CRM_Entity1`|
 
 
 ## Links
@@ -112,4 +112,4 @@ else:
 | `crm:E17_Type_Assignment2` | `crm:P21_had_general_purpose` | `http://vocab.getty.edu/aat/300179869`|
 | `crm:E22_Man-Made_Object1` | `crm:P41i_was_classified_by` | `crm:E17_Type_Assignment1`|
 | `crm:E22_Man-Made_Object1` | `crm:P41i_was_classified_by` | `crm:E17_Type_Assignment2`|
-| `crm:E22_Man-Made_Object1` | `crm:P62_depicts` | `owl:Thing1`|
+| `crm:E22_Man-Made_Object1` | `crm:P62_depicts` | `crm:E1_CRM_Entity1`|
