@@ -34,7 +34,7 @@ return getValue("TitleURI") + "/id"
 #### _TitleTypeURI_
 From column: _RECORDS / ObjectID_
 ``` python
-return getValue("TitleURI") + "/title_type"
+return UM.uri_from_fields("thesuari/title_type/", getValue("TitleType"))
 ```
 
 
